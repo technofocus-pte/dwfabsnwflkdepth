@@ -66,14 +66,14 @@ trial enabled.
 **Note**: If you are directed to the Microsoft Fabric Home page, then
 skip steps from \#2 to \#4.
 
-![A screenshot of a computer Description automatically
-generated](./media/image1.png)
+    ![A screenshot of a computer Description automatically
+    generated](./media/image1.png)
 
 2.  In the **Microsoft Fabric** window, enter your credentials, and
     click on the **Submit** button.
 
-   ![A close up of a white and green object Description automatically
-   generated](./media/image2.png)
+    ![A close up of a white and green object Description automatically
+    generated](./media/image2.png)
 
 3.  Then, In the **Microsoft** window enter the password and click on
     the **Sign in** button**.**

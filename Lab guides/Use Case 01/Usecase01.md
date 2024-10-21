@@ -1,3 +1,4 @@
+#**Building a Sales and Geography Data Warehouse for Contoso in Microsoft Fabric**
 **Introduction**
 
 While many concepts in Microsoft Fabric may be familiar to data and
@@ -65,40 +66,40 @@ trial enabled.
 **Note**: If you are directed to the Microsoft Fabric Home page, then
 skip steps from \#2 to \#4.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image1.png)
+![A screenshot of a computer Description automatically
+generated](./media/image1.png)
 
 2.  In the **Microsoft Fabric** window, enter your credentials, and
     click on the **Submit** button.
 
-> ![A close up of a white and green object Description automatically
-> generated](./media/image2.png)
+   ![A close up of a white and green object Description automatically
+   generated](./media/image2.png)
 
 3.  Then, In the **Microsoft** window enter the password and click on
     the **Sign in** button**.**
 
-> ![A login screen with a red box and blue text Description
-> automatically generated](./media/image3.png)
+   ![A login screen with a red box and blue text Description
+   automatically generated](./media/image3.png)
 
 4.  In **Stay signed in?** window, click on the **Yes** button.
 
-> ![A screenshot of a computer error Description automatically
-> generated](./media/image4.png)
+    ![A screenshot of a computer error Description automatically
+    generated](./media/image4.png)
 
 5.  On the **Microsoft Fabric** home page, select the **Power BI**
     template.
 
-> ![](./media/image5.png)
+    ![](./media/image5.png)
 
 6.  In the **Power BI Home** page menu bar on the left,
     select **Workspaces** (the icon looks similar to 🗇).
 
-> ![](./media/image6.png)
+    ![](./media/image6.png)
 
 7.  In the Workspaces pane Select **+** **New workspace**.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image7.png)
+    ![A screenshot of a computer Description automatically
+    generated](./media/image7.png)
 
 8.  In the **Create a workspace tab**, enter the following details and
     click on the **Apply** button.
@@ -114,32 +115,32 @@ skip steps from \#2 to \#4.
 9.  Wait for the deployment to complete. It takes 2-3 minutes to
     complete. When your new workspace opens, it should be empty.
 
-![A screenshot of a computer Description automatically
-generated](./media/image11.png)
+    ![A screenshot of a computer Description automatically
+    generated](./media/image11.png)
 
 10. In the **Power BI Fabric Lakehouse Tutorial-XX** page, click on the
     **Data Warehouse** icon located at the bottom left and select **Data
     Warehouse** under Datascience.
 
-> ![](./media/image12.png)
+    > ![](./media/image12.png)
 
 ## Task 2: Create a Warehouse in Microsoft Fabric
 
 1.  In the **Synapse** **Data Warehouse** page, select **Warehouse** to
     create a lakehouse.
 
-> ![](./media/image13.png)
+    ![](./media/image13.png)
 
 2.  On the **New warehouse** dialog, enter **WideWorldImporters** and
     click on the **Create** button.
 
-> ![](./media/image14.png)
+    ![](./media/image14.png)
 
 3.  When provisioning is complete, the **WideWorldImporters**
     warehouse landing page appears.
 
-![A screenshot of a computer Description automatically
-generated](./media/image15.png)
+    ![A screenshot of a computer Description automatically
+    generated](./media/image15.png)
 
 ## Task 3: Ingest data into a Warehouse in Microsoft Fabric
 
@@ -147,35 +148,35 @@ generated](./media/image15.png)
     select **Warehouse_FabricXX** in the left-sided navigation menu to
     return to the workspace item list.
 
-> ![](./media/image16.png)
->
-> ![](./media/image17.png)
+    ![](./media/image16.png)
+    
+    ![](./media/image17.png)
 
 2.  In the **Warehouse_FabricXX** page, click on the +**New** dropdown.
     Then, click on **More options** to view the full list of available
     items.
 
-> ![](./media/image18.png)
+    ![](./media/image18.png)
 
 3.  In the **Warehouse_FabricXX** page, navigate to the **Data
     Factory** section and click on **Data pipeline.**
 
-> ![](./media/image19.png)
+    ![](./media/image19.png)
 
 4.  On the **New** **pipeline** dialog box, in the **Name** field, enter
     **Load Customer Data** and click on the **Create** button.
 
-> ![](./media/image20.png)
+    ![](./media/image20.png)
 
 5.  In the **Load Customer Data** page, navigate to **Start building
     your data pipeline** section and click on **Pipeline activity**.
 
-> ![](./media/image21.png)
+    ![](./media/image21.png)
 
-6.  Navigate and select **Copy data** under **Move
+7.  Navigate and select **Copy data** under **Move
     &** **transform** section.
 
-> ![](./media/image22.png)
+    ![](./media/image22.png)
 
 7.  Select the newly created **Copy data** **1** activity from the
     design canvas to configure it.
@@ -183,24 +184,24 @@ generated](./media/image15.png)
 > **Note**: Drag the horizonal line in the design canvas to have a
 > complete view of various features.
 >
-> ![](./media/image23.png)
+  ![](./media/image23.png)
 
 8.  On the **General** tab, in the **Name** field**,** enter **CD Load
     dimension_customer** .
 
-> ![](./media/image24.png)
+    ![](./media/image24.png)
 
-9.  Click on the **Source** tab, select **External** radio button for
+10.  Click on the **Source** tab, select **External** radio button for
     the **Data store type**. In the **Connection** row**,**
     select +**New** to create a new connection.
 
-![](./media/image25.png)
+    ![](./media/image25.png)
 
 10. On the **New connection** window, under **All** tab, navigate and
     select **Azure Blob Storage**, then click on the **Continue**
     button.
 
-![](./media/image26.png)
+    ![](./media/image26.png)
 
 11. On the **Connection settings** pane that appears on the right side,
     configure the following settings and click on the **Create** button.
@@ -244,35 +245,35 @@ generated](./media/image15.png)
     unable to see **Parquet**, then type in the search box and then
     select it)
 
-![](./media/image28.png)
+    ![](./media/image28.png)
 
 14. Click on **Preview data** on the right side of **File path** setting
     to ensure that there are no errors and then click on **close.**
 
-![](./media/image29.png)
+    ![](./media/image29.png)
 
-![](./media/image30.png)
+    ![](./media/image30.png)
 
 15. On the **Destination** tab, enter the following settings.
 
-[TABLE]
-
-![](./media/image31.png)
+    [TABLE]
+    
+    ![](./media/image31.png)
 
 16. From the ribbon, select **Run**.
 
-> ![](./media/image32.png)
+    ![](./media/image32.png)
 
 17. In the **Save and run?** dialog box, click on **Save and run**
     button.
 
-> ![](./media/image33.png)
->
-> ![A screenshot of a computer Description automatically
-> generated](./media/image34.png)
->
-> ![A screenshot of a computer Description automatically
-> generated](./media/image35.png)
+    ![](./media/image33.png)
+    
+    ![A screenshot of a computer Description automatically
+    generated](./media/image34.png)
+    
+    ![A screenshot of a computer Description automatically
+    generated](./media/image35.png)
 
 18. Monitor the copy activity's progress on the **Output** page and wait
     for it to complete.
@@ -285,17 +286,17 @@ generated](./media/image15.png)
 1.  On **Load Customer Data** page, click on **Warehouse_FabricXX**
     workspace in the left-sided navigation bar.
 
-> ![](./media/image37.png)
+    ![](./media/image37.png)
 
 2.  In the **Syanapse Data Engineering** **Warehouse_FabricXX** page,
     carefully navigate and click on **WideWorldImporters** having
     **Warehouse** type as shown in the below image.
 
-![](./media/image38.png)
+    ![](./media/image38.png)
 
 3.  In the **WideWorldImporters** page, click on **New SQL query**.
 
-> ![](./media/image39.png)
+    ![](./media/image39.png)
 
 4.  In the query editor, paste the following code and select **Run** to
     execute the query
@@ -418,23 +419,23 @@ generated](./media/image15.png)
 5.  To save this query, right-click on the **SQL query 1** tab just
     above the editor and select **Rename**.
 
-> ![](./media/image42.png)
+    ![](./media/image42.png)
 
 6.  In the **Rename** dialog box, under **Name** field, enter **Create
     Tables** to change the name of **SQL query 1**. Then, click on the
     **Rename** button.
 
-> ![](./media/image43.png)
+    ![](./media/image43.png)
 
 7.  Click on the **Refresh icon** below the **Home** tab, as shown in
     the below image.
 
-> ![](./media/image44.png)
+    ![](./media/image44.png)
 
 8.  In the **Explorer** pane, you’ll see the **fact_sale** table
     and **dimension_city** table.
 
-> ![](./media/image45.png)
+    ![](./media/image45.png)
 
 ## Task 5: Load data using T-SQL
 
@@ -445,7 +446,7 @@ methods for loading data.
 1.  In the **WideWorldImporters** page, click on **New SQL query** in
     the command bar**.**
 
-> ![](./media/image46.png)
+    ![](./media/image46.png)
 
 2.  In the query editor, **paste** the following code, then click on
     **Run** to execute the query.
@@ -478,27 +479,27 @@ methods for loading data.
     the number of rows that were loaded into the **dimension_city** and
     **fact_sale** tables respectively.
 
-![](./media/image48.png)
+    ![](./media/image48.png)
 
 4.  Load the data preview to validate the data loaded successfully by
     selecting on the **fact_sale** table in the **Explorer**.
 
-![](./media/image49.png)
+    ![](./media/image49.png)
 
 5.  Rename the query. Right-click on **SQL query 1** in
     the **Explorer**, then select **Rename**.
 
-> ![](./media/image50.png)
+    ![](./media/image50.png)
 
 6.  In the **Rename** dialog box, under the **Name** field, enter **Load
     Tables**. Then, click on **Rename** button.
 
-> ![](./media/image51.png)
+    ![](./media/image51.png)
 
 7.  Click on the **Refresh** icon in the command bar below the **Home**
     tab.
 
-> ![](./media/image52.png)
+    ![](./media/image52.png)
 
 ## Task 6: Clone table using T-SQL in Microsoft Fabric
 
@@ -513,7 +514,7 @@ syntax.
 2.  In the **WideWorldImporter** page, click on the **New SQL query** in
     the command bar**.**
 
-> ![](./media/image46.png)
+    ![](./media/image46.png)
 
 3.  In the query editor, paste the following code to create clones of
     the **dbo.dimension_city** and **dbo.fact_sale** tables.
@@ -535,36 +536,36 @@ syntax.
     to execute. After the query is completed, the table clones
     **dimension_city1** and **fact_sale1** will be created.
 
-> ![](./media/image54.png)
+    ![](./media/image54.png)
 
 5.  Load the data preview to validate the data loaded successfully by
     selecting on the **dimension_city1** table in the **Explorer**.
 
-![](./media/image55.png)
+    ![](./media/image55.png)
 
 6.  Right-click on **SQL query** that you’ve created to clone the
     tables in the **Explorer** and select **Rename**.
 
-> ![](./media/image56.png)
+    ![](./media/image56.png)
 
 7.  In the **Rename** dialog box, under the **Name** field, enter
     **Clone Table**, then click on the **Rename** button.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image57.png)
+    ![A screenshot of a computer Description automatically
+    generated](./media/image57.png)
 
 8.  Click on the **Refresh** icon in the command bar below the **Home**
     tab.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image58.png)
+    ![A screenshot of a computer Description automatically
+    generated](./media/image58.png)
 
 ## Task 7: Create a table clone across schemas within the same warehouse
 
 1.  In **WideWorldImporters** page, click on **New SQL query** in the
     command bar.
 
-> ![](./media/image46.png)
+    ![](./media/image46.png)
 
 2.  Create a new schema within the **WideWorldImporter** warehouse
     named **dbo1**. **Copy paste** and **run** the following T-SQL code
@@ -601,30 +602,30 @@ syntax.
     clones **dimension_city1** and **fact_sale1** are created in
     the **dbo1** schema.
 
-> ![](./media/image61.png)
+    ![](./media/image61.png)
 
 6.  Load the data preview to validate the data loaded successfully by
     selecting on the **dimension_city1** table under **dbo1** schema in
     the **Explorer**.
 
-![](./media/image62.png)
+    ![](./media/image62.png)
 
 7.  **Rename** the query for reference later. Right-click on **SQL query
     1** in the **Explorer** and select **Rename**.
 
-> ![](./media/image63.png)
+    ![](./media/image63.png)
 
 8.  In the **Rename** dialog box, under the **Name** field, enter
     **Clone Table in another schema**. Then, click on **Rename** button.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image64.png)
+    ![A screenshot of a computer Description automatically
+    generated](./media/image64.png)
 
 9.  Click on the **Refresh** icon in the command bar below the **Home**
     tab.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image65.png)
+    ![A screenshot of a computer Description automatically
+    generated](./media/image65.png)
 
 ## Task 8: Transform data using a stored procedure
 
@@ -633,7 +634,7 @@ Learn how to create and save a new stored procedure to transform data.
 1.  In **WideWorldImporters** page, click on **New SQL query** in the
     command bar.
 
-> ![](./media/image66.png)
+    ![](./media/image66.png)
 
 2.  In the query editor, **paste** the following code to create the
     stored procedure **dbo.populate_aggregate_sale_by_city**. This
@@ -736,26 +737,26 @@ Learn how to create and save a new stored procedure to transform data.
 3.  Right-click on SQL query that you’ve created to clone the tables in
     the Explorer and select **Rename**.
 
-> ![](./media/image68.png)
+    ![](./media/image68.png)
 
 4.  In the **Rename** dialog box, under the **Name** field, enter
     **Create Aggregate Procedure**, then click on the **Rename** button.
 
-> ![](./media/image69.png)
+    ![](./media/image69.png)
 
 5.  Click on the **Refresh icon** below the **Home** tab.
 
-> ![](./media/image70.png)
+    ![](./media/image70.png)
 
 6.  In the **Explorer** tab, verify that you can see the newly created
     stored procedure by expanding the **StoredProcedures** node under
     the **dbo** schema.
 
-> ![](./media/image71.png)
+    ![](./media/image71.png)
 
 7.  From the **Home** tab of the ribbon, select **New SQL query**.
 
-> ![](./media/image72.png)
+    ![](./media/image72.png)
 
 8.  In the query editor, paste the following code. This T-SQL executes
     **dbo.populate_aggregate_sale_by_city** to create the
@@ -772,23 +773,23 @@ SQLCopy
 9.  To save this query for reference later, right-click on the query tab
     just above the editor and select **Rename.**
 
-![](./media/image74.png)
+    ![](./media/image74.png)
 
 10. In the **Rename** dialog box, under the **Name** field, enter
     **Run** **Create Aggregate Procedure**, then click on the **Rename**
     button.
 
-![](./media/image75.png)
+    ![](./media/image75.png)
 
 11. Select the **Refresh** icon on the ribbon.
 
-![](./media/image76.png)
+    ![](./media/image76.png)
 
 12. In the Object **Explorer** tab, load the data preview to validate
     the data loaded successfully by selecting on
     the **aggregate_sale_by_city** table in the **Explorer**.
 
-![](./media/image77.png)
+    ![](./media/image77.png)
 
 ## Task 9: Create a query with the visual query builder
 
@@ -798,40 +799,40 @@ Fabric portal.
 1.  In the **WideWolrdImporters** page, from the **Home** tab of the
     ribbon, select **New visual query**.
 
-> ![](./media/image78.png)
+    ![](./media/image78.png)
 
 2.  Drag the **fact_sale** table from the **Explorer** to the query
     design pane.
 
-> ![](./media/image79.png)
->
-> ![A screenshot of a computer Description automatically
-> generated](./media/image80.png)
+    ![](./media/image79.png)
+
+    ![A screenshot of a computer Description automatically
+    generated](./media/image80.png)
 
 3.  Navigate to query design pane **transformations ribbon** and limit
     the dataset size by clicking on **Reduce rows** dropdown, then click
     on **Keep top rows** as shown in the below image.
 
-![](./media/image81.png)
+    ![](./media/image81.png)
 
 4.  In the **Keep top rows** dialog box, enter **10000** and
     Select **OK**.
 
-> ![](./media/image82.png)
->
-> ![A screenshot of a computer Description automatically
-> generated](./media/image83.png)
+    ![](./media/image82.png)
+    
+    ![A screenshot of a computer Description automatically
+    generated](./media/image83.png)
 
 5.  Drag the **dimension_city** table from the **Explorer** pane to the
     **query design** pane.
 
-> ![](./media/image84.png)
+   ![](./media/image84.png)
 
 6.  From the transformations ribbon, select the dropdown beside
     **Combine** and select **Merge queries as new** as shown in the
     below image.
 
-![](./media/image85.png)
+    ![](./media/image85.png)
 
 7.  On the **Merge** settings page enter the following details.
 
@@ -858,23 +859,23 @@ Fabric portal.
 - In the **Join kind** diagram selection, choose **Inner** and click on
   the **Ok** button.
 
-![](./media/image86.png)
-
-![](./media/image87.png)
+  ![](./media/image86.png)
+  
+  ![](./media/image87.png)
 
 8.  With the **Merge** step selected, select the **Expand** button
     beside **fact_sale** on the header of the data grid as shown in the
     below image, then select the columns **TaxAmount, Profit,
     TotalIncludingTax** and select **Ok.**
 
-![](./media/image88.png)
-
-![](./media/image89.png)
+    ![](./media/image88.png)
+    
+    ![](./media/image89.png)
 
 9.  In the **transformations ribbon,** click on the dropdown beside
     **Transform**, then select **Group by**.
 
-![](./media/image90.png)
+    ![](./media/image90.png)
 
 10. On the **Group by** settings page, enter the following details.
 
@@ -904,24 +905,24 @@ Fabric portal.
 
 - Click on the **OK** button
 
-![](./media/image91.png)
-
-![](./media/image92.png)
+  ![](./media/image91.png)
+  
+  ![](./media/image92.png)
 
 11. In the explorer, navigate to **Queries** and right-click on **Visual
     query 1** under **Queries**. Then, select **Rename**.
 
-> ![](./media/image93.png)
+    ![](./media/image93.png)
 
 12. Type **Sales Summary** to change the name of the query.
     Press **Enter** on the keyboard or select anywhere outside the tab
     to save the change.
 
-> ![](./media/image94.png)
+    ![](./media/image94.png)
 
 13. Click on the **Refresh** icon below the **Home** tab.
 
-> ![](./media/image95.png)
+    ![](./media/image95.png)
 
 ## Task 10: Analyze data with a notebook
 
@@ -936,23 +937,23 @@ Microsoft Fabric workspace:
 1.  On the **WideWorldImportes** page, click on **Warehouse_FabricXX**
     Workspace on the left-sided navigation menu.
 
-> ![](./media/image96.png)
+    ![](./media/image96.png)
 
 2.  On the **Synapse Data Engineering Warehouse_FabricXX** home page,
     under **Warehouse_FabricXX** pane, click on **+New**, then select
     **Lakehouse .**
 
-> ![](./media/image97.png)
+    ![](./media/image97.png)
 
 3.  In the **Name** field, enter **ShortcutExercise** and click on the
     **Create** button**.**
 
-> ![](./media/image98.png)
+    ![](./media/image98.png)
 
 4.  In the **ShortcutExercise** page, navigate to **Get data in your
     lakehouse** section, then click on **New shortcut** button.
 
-> ![](./media/image99.png)
+    ![](./media/image99.png)
 
 5.  In the **New shortcut** window, select **Microsoft OneLake**.
 
@@ -962,20 +963,20 @@ Microsoft Fabric workspace:
     click on the **Warehouse** named **WideWorldImporters** that you’ve
     created previously, then click on the **Next** button**.**
 
-> ![](./media/image101.png)
+    ![](./media/image101.png)
 
 7.  In the **OneLake** object browser, expand **Tables**, then expand
     the **dbo** schema, and select the radio button
     beside **dimension_customer**. Select the **Next** button.
 
-> ![](./media/image102.png)
+    ![](./media/image102.png)
 
 8.  In the **New shortcut** window, click on the **Create** button and
     click on the **Close** button
 
-> ![](./media/image103.png)
->
-> ![](./media/image104.png)
+    ![](./media/image103.png)
+
+    ![](./media/image104.png)
 
 9.  Wait for a while and then click on the **Refresh** icon.
 
@@ -983,13 +984,13 @@ Microsoft Fabric workspace:
     preview the data. Notice that the lakehouse is showing the data from
     the **dimension_customer** table from the Warehouse.
 
-![](./media/image105.png)
+    ![](./media/image105.png)
 
 11. Next, create a new notebook to query
     the **dimension_customer** table. In the **Home** ribbon, select the
     drop down for **Open notebook** and choose **New notebook**.
 
-> ![](./media/image106.png)
+    ![](./media/image106.png)
 
 12. Select, then drag the **dimension_customer** from
     the **Tables** list into the open notebook cell. You can see a
@@ -998,13 +999,13 @@ Microsoft Fabric workspace:
     experience is similar to Visual Studio Code Jupyter notebook
     experience. You can also open the notebook in VS Code.
 
-![](./media/image107.png)
+    ![](./media/image107.png)
 
 13. In the **Home** ribbon, select the **Run all** button. Once the
     query is completed, you will see you can easily use PySpark to query
     the Warehouse tables!
 
-![](./media/image108.png)
+    ![](./media/image108.png)
 
 ## Task 11: Add multiple warehouses to the Explorer
 
@@ -1016,27 +1017,27 @@ Fabric.
 1.  From **Notebook1** page, navigate and click on
     **Warehouse_FabricXX** Workspace on the left-sided navigation menu.
 
-> ![](./media/image109.png)
+    ![](./media/image109.png)
 
 2.  In the **Warehouse_FabricXX** view, select
     the **WideWorldImporters** warehouse.
 
-![](./media/image110.png)
+    ![](./media/image110.png)
 
 3.  In the **WideWorldImporters** page, under **Explorer** tab, select
     the **+ Warehouses** button.
 
-> ![](./media/image111.png)
+    ![](./media/image111.png)
 
 4.  In Add warehouses window, select **ShortcutExercise** and click on
     the **Confirm** button. Both warehouse experiences are added to the
     query.
 
-![](./media/image112.png)
+    ![](./media/image112.png)
 
 5.  Your selected warehouses now show the same **Explorer** pane.
 
-![](./media/image113.png)
+    ![](./media/image113.png)
 
 ## Task 12: Execute a cross-warehouse query
 
@@ -1047,7 +1048,7 @@ the database.schema.table, as in SQL Server.
 
 1.  From the **Home** tab of the ribbon, select **New SQL query**.
 
-> ![](./media/image114.png)
+    ![](./media/image114.png)
 
 2.  In the query editor, copy and paste the following T-SQL code. Select
     the **Run** button to execute the query. After the query is
@@ -1076,12 +1077,12 @@ the database.schema.table, as in SQL Server.
 3.  Rename the query for reference. Right-click on **SQL query 1** in
     the **Explorer** and select **Rename**.
 
-> ![](./media/image116.png)
+    ![](./media/image116.png)
 
 4.  In the **Rename** dialog box, under the **Name** field, enter
     **Cross-warehouse query**, then click on the **Rename** button. 
 
-> ![](./media/image117.png)
+    ![](./media/image117.png)
 
 ## Task 13: Enable azure maps visuals sign in
 
@@ -1090,11 +1091,11 @@ the database.schema.table, as in SQL Server.
     press the **Enter** button. In Microsoft Fabric page, click on
     **Power BI**.
 
-![](./media/image118.png)
+    ![](./media/image118.png)
 
 2.  On right side of Power BI home page, click on the **Settings** icon.
 
-![](./media/image119.png)
+    ![](./media/image119.png)
 
 In case, you did not see the **Settings** icon, then click on the
 horizontal ellipsis on the top right side of the page, then navigate and
@@ -1105,22 +1106,22 @@ click on **Settings** as shown in the below image.
 3.  In **Settings** pane, scroll down to **Governance and insights**,
     then click on **Admin portal** .
 
-![](./media/image121.png)
+    ![](./media/image121.png)
 
 4.  In **Admin portal** pane, select **Tenant settings**, scroll down to
     **Integration settings** section, click on **Use Azure Maps
     visual**, then enable it using the **toggle** button. After **Use
     Azure Maps visual** were Enabled, click on the **Apply** button.
 
-![](./media/image122.png)
+    ![](./media/image122.png)
 
-![](./media/image123.png)
+    ![](./media/image123.png)
 
 5.  You will see a notification stating - **Applying changes.** It will
     take approximately 15 minutes for implemting the tenant settings.
 
-![A screenshot of a computer Description automatically
-generated](./media/image124.png)
+    ![A screenshot of a computer Description automatically
+    generated](./media/image124.png)
 
 ## Task 14: Create Power BI reports
 
@@ -1131,13 +1132,13 @@ reports.
     the options in the bottom left corner, just outside the canvas as
     shown in the below image.
 
-> ![](./media/image125.png)
+    ![](./media/image125.png)
 
 2.  From the **fact_sale** table, drag the **CityKey** field and drop it
     onto the **CityKey** field in the **dimension_city** table to create
     a relationship.
 
-![](./media/image126.png)
+    ![](./media/image126.png)
 
 3.  On the **Create Relationship** settings:
 
@@ -1162,10 +1163,10 @@ reports.
 ![](./media/image128.png)
 
 1.  From the **Home** tab of the ribbon, select **New report**.
+  
+   ![](./media/image129.png)
 
-> ![](./media/image129.png)
-
-2.  In the **Synapse Data Engineering Warehouse_FabricXX** page,
+4.  In the **Synapse Data Engineering Warehouse_FabricXX** page,
     under **Visualizations**, click to the **Column chart** icon to add
     a **Column chart** to your report.
 
@@ -1180,11 +1181,11 @@ reports.
   of the canvas by dragging the anchor points on the corners of the
   visual.
 
-![](./media/image130.png)
-
-![](./media/image131.png)
-
-![](./media/image132.png)
+  ![](./media/image130.png)
+  
+  ![](./media/image131.png)
+  
+  ![](./media/image132.png)
 
 1.  Select anywhere on the blank canvas (or press the Esc key) so the
     column chart visual is no longer selected.
@@ -1192,27 +1193,27 @@ reports.
 2.  Build a **Maps** visual,On the **Visualizations** pane, select
     the **ArcGIS Maps for Power BI** visual.
 
-> ![](./media/image133.png)
+    ![](./media/image133.png)
 
 3.  From the **Data** pane, drag **StateProvince** from
     the **dimension_city** table to the **Location** bucket on
     the **Visualizations** pane.
 
-> ![](./media/image134.png)
+    ![](./media/image134.png)
 
 4.  From the **Data** pane, drag **Profit** from the **fact_sale** table
     to the **Size** bucket on the **Visualizations** pane.
 
-> ![](./media/image135.png)
+    ![](./media/image135.png)
 
 5.  If necessary, reposition and resize the map to take up the bottom
     left quarter of the canvas by dragging the anchor points on the
     corners of the visual.
 
-> ![A map of the world with blue dots Description automatically
-> generated](./media/image136.png)
+    ![A map of the world with blue dots Description automatically
+    generated](./media/image136.png)
 
-![](./media/image137.png)
+    ![](./media/image137.png)
 
 6.  Select anywhere on the blank canvas (or press the Esc key) so the
     map visual is no longer selected.
@@ -1220,7 +1221,7 @@ reports.
 7.  Build a **Table** visual on the **Visualizations** pane, select
     the **Table** visual.
 
-> ![](./media/image138.png)
+    ![](./media/image138.png)
 
 8.  From the **Data** pane, check the box next to **SalesTerritory** on
     the **dimension_city** table.
@@ -1228,7 +1229,7 @@ reports.
 9.  From the **Data** pane, check the box next to **StateProvince** on
     the **dimension_city** table.
 
-> ![](./media/image139.png)
+    ![](./media/image139.png)
 
 10. From the **Data** pane, check the box next to **Profit** on
     the **fact_sale** table.
@@ -1236,27 +1237,27 @@ reports.
 11. From the **Data** pane, check the box next
     to **TotalExcludingTax** on the **fact_sale** table.
 
-![](./media/image140.png)
+    ![](./media/image140.png)
 
 12. Reposition and resize the column chart to take up the right half of
     the canvas by dragging the anchor points on the corners of the
     visual.
 
-![](./media/image141.png)
+    ![](./media/image141.png)
 
 13. In the Synapse Data Engineering Warehouse_FabricXX page, from the
     ribbon, select **File** and select the **Save**.
 
-> ![](./media/image142.png)
+    ![](./media/image142.png)
 
 14. In the Save your report dialog box, enter !! **Sales Analysis** !!
     as the name of your report and click on the **Save** button.
 
-> ![](./media/image143.png)
+    ![](./media/image143.png)
 
 15. You will see a notification stating **Report saved.**
 
-> ![](./media/image144.png)
+    ![](./media/image144.png)
 
 ## Task 15: Build a report from the OneLake data hub
 
@@ -1266,38 +1267,38 @@ Warehouse in the last step.
 1.  In the **Sales Analysis** pane, select the **OneLake data hub** in
     the left navigation menu.
 
-> ![](./media/image145.png)
+    ![](./media/image145.png)
 
 2.  From the item list, select **WideWorldImporters** with the type
     of **Dataset (default)**.
 
-> ![](./media/image146.png)
+    ![](./media/image146.png)
 
 3.  In the **Visualize this data** section, select **Create a
     report** and select **Auto-create**. A report is generated from
     the **dimension_customer** table that was loaded in the previous
     section.
 
-![](./media/image147.png)
+    ![](./media/image147.png)
 
 4.  A report similar to the following image is generated.
 
-![](./media/image148.png)
+    ![](./media/image148.png)
 
 5.  From the ribbon, select **Save**.
 
-> ![](./media/image149.png)
+    ![](./media/image149.png)
 
 6.  In the **Save your report** dialog box, enter **Customer Quick
     Summary** in the name box. In the **Save your report** dialogue,
     select **Save**.
 
-> ![](./media/image150.png)
+    ![](./media/image150.png)
 
 7.  You will see a notification stating **Report saved.**
 
-> ![A screenshot of a phone Description automatically
-> generated](./media/image151.png)
+    ![A screenshot of a phone Description automatically
+    generated](./media/image151.png)
 
 ## Task 16: Clean up resources
 
@@ -1309,19 +1310,21 @@ items you created as part of the lab.
 1.  Select **Warehouse_FabricXX** in the navigation menu to return to
     the workspace item list.
 
-> ![](./media/image152.png)
+    ![](./media/image152.png)
 
 2.  In the menu of the workspace header, select **Workspace settings**.
 
-> ![](./media/image153.png)
+    ![](./media/image153.png)
 
 3.  In the **Workspace settings** dialog box, select **Other** and
     select the **Remove this workspace**.
 
-> ![](./media/image154.png)
+    ![](./media/image154.png)
 
 4.  In the **Delete workspace?** dialog box, click on the **Delete**
-    button. ![](./media/image155.png)
+    button.
+
+    ![](./media/image155.png)
 
 **Summary**
 

@@ -110,19 +110,19 @@ Follow these steps to start your Fabric trial.
 
 2.  If prompted, agree to the terms and then select **Activate**.
 
-> ![](./media/image7.png)
+    ![](./media/image7.png)
 
 3.  Once your trial capacity is ready, you receive a confirmation
     message. Select **Fabric Home Page** to begin working in Fabric.
 
-> ![](./media/image8.png)
+    ![](./media/image8.png)
 
 4.  Open your Account manager again. Notice that you now have a heading
     for **Trial status**. Your Account manager keeps track of the number
     of days remaining in your trial. You will also see the countdown in
     your Fabric menu bar when you work in a product experience.
 
-> ![](./media/image9.png)
+    ![](./media/image9.png)
 
 ## Task 3: Create a workspace
 
@@ -132,12 +132,12 @@ trial enabled.
 1.  On the **Microsoft Fabric** home page, select the **Power BI**
     template.
 
-> ![](./media/image10.png)
+    ![](./media/image10.png)
 
 2.  In the **Power BI Home** page menu bar on the left,
     select **Workspaces** (the icon looks similar to 🗇).
 
-> ![](./media/image11.png)
+    ![](./media/image11.png)
 
 3.  In the Workspaces pane Select **+** **New workspace**.
 
@@ -192,19 +192,19 @@ trial enabled.
 1.  In the **Synapse** **Data Warehouse** page, select **Warehouse** to
     create a lakehouse.
 
-> ![](./media/image18.png)
+    ![](./media/image18.png)
 
 2.  On the **New warehouse** dialog,
     enter +++**WideWorldImporters+++** and click on the **Create**
     button.
 
-> ![](./media/image19.png)
+    ![](./media/image19.png)
 
 3.  When provisioning is complete, the **WideWorldImporters**
     warehouse landing page appears.
 
-![A screenshot of a computer Description automatically
-generated](./media/image20.png)
+    ![A screenshot of a computer Description automatically
+    generated](./media/image20.png)
 
 # Exercise 2: Ingest data into a Warehouse in Microsoft Fabric
 
@@ -214,16 +214,16 @@ generated](./media/image20.png)
     select **Warehouse\_FabricXX** in the left-sided navigation menu to
     return to the workspace item list.
 
-> ![](./media/image21.png)
+    ![](./media/image21.png)
 > 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image22.png)
+    ![A screenshot of a computer Description automatically
+    generated](./media/image22.png)
 
 2.  In the **Warehouse\_FabricXX** page, select +**New item**. Then,
     click Data pipeline to view the full list of available items under
     Get data.
 
-> ![](./media/image23.png)
+    ![](./media/image23.png)
 
 3.  On the **New** **pipeline** dialog box, in the **Name** field, enter
     +++**Load Customer Data+++** and click on the **Create** button.

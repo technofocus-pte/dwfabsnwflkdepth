@@ -1,2 +1,2 @@
-# dwfabsnwflkpvt
-Data Warehousing with MS Fabric and Snowflake
+# dwfabdepth
+Data Warehousing with MS Fabri

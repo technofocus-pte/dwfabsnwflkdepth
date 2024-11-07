@@ -74,11 +74,11 @@ items.
 
 ## **Task 1: Sign in to Power BI account and sign up for the free [Microsoft Fabric trial](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)**
 
-Open your browser, navigate to the address bar, and type or paste
+1. Open your browser, navigate to the address bar, and type or paste
     the following URL: https://app.fabric.microsoft.com/ then press the
     **Enter** button.
 
-![](./media/image1.png)
+   ![](./media/image1.png)
 
 2.  In the **Microsoft Fabric** window, enter assigned credentials, and
     click on the **Submit** button.
@@ -88,16 +88,15 @@ Open your browser, navigate to the address bar, and type or paste
 3.  Then, In the **Microsoft** window enter the password and click on
     the **Sign in** button**.**
 
-> ![](./media/image3.png)
+    ![](./media/image3.png)
 
 4.  In **Stay signed in?** window, click on the **Yes** button.
 
-> ![](./media/image4.png)
+    ![](./media/image4.png)
 
 5.  You’ll be directed to Power BI Home page.
 
-![A screenshot of a computer Description automatically
-generated](./media/image5.png)
+    ![](./media/image5.png)
 
 ## **Task 2: Start the Microsoft Fabric (Preview) trial**
 
@@ -107,7 +106,7 @@ Follow these steps to start your Fabric trial.
     right side. In the Account manager blade, navigate and
     select **Start trial as shown in the below image.**
 
-![](./media/image6.png)
+    ![](./media/image6.png)
 
 2.  If prompted, agree to the terms and then select **Activate**.
 

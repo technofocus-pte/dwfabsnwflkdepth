@@ -78,12 +78,12 @@ items.
     the following URL: https://app.fabric.microsoft.com/ then press the
     **Enter** button.
 
-> ![](./media/image1.png)
+    ![](./media/image1.png)
 
 2.  In the **Microsoft Fabric** window, enter assigned credentials, and
     click on the **Submit** button.
 
-> ![](./media/image2.png)
+    ![](./media/image2.png)
 
 3.  Then, In the **Microsoft** window enter the password and click on
     the **Sign in** button**.**

@@ -78,21 +78,21 @@ items.
     the following URL: https://app.fabric.microsoft.com/ then press the
     **Enter** button.
 
-> ![](./media/image1.png)
+  > ![](./media/image1.png)
 
 2.  In the **Microsoft Fabric** window, enter assigned credentials, and
     click on the **Submit** button.
 
-> ![](./media/image2.png)
+  > ![](./media/image2.png)
 
 3.  Then, In the **Microsoft** window enter the password and click on
     the **Sign in** button**.**
 
-> ![](./media/image3.png)
+  > ![](./media/image3.png)
 
 4.  In **Stay signed in?** window, click on the **Yes** button.
 
-> ![](./media/image4.png)
+  > ![](./media/image4.png)
 
 5.  You’ll be directed to Power BI Home page.
 

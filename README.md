@@ -1,2 +1,2 @@
 # dwfabdepth
-Data Warehousing with MS Fabri
+Data Warehousing with MS Fabric

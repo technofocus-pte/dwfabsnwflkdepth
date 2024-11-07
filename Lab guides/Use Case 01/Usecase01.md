@@ -74,11 +74,11 @@ items.
 
 ## **Task 1: Sign in to Power BI account and sign up for the free [Microsoft Fabric trial](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)**
 
-1.  Open your browser, navigate to the address bar, and type or paste
+Open your browser, navigate to the address bar, and type or paste
     the following URL: https://app.fabric.microsoft.com/ then press the
     **Enter** button.
 
-    ![](./media/image1.png)
+![](./media/image1.png)
 
 2.  In the **Microsoft Fabric** window, enter assigned credentials, and
     click on the **Submit** button.

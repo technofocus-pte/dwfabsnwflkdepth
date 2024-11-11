@@ -305,13 +305,13 @@ generated](./media/image34.png)
 
 14. On the **Destination** tab, enter the following settings.
 
-|    |    |
-|-|---|-----|
-Connection| WideWorldImporters|
-Table option|	select the Auto create table radio button.|
-Data Warehouse|	drop down, select WideWorldImporters from the list|
-Table|	In the first box enter dbo|
-     |	In the second box enter dimension_customer|
+|     |    |
+|-------|------|
+|Connection| WideWorldImporters|
+|Table option|	select the Auto create table radio button.|
+|Data Warehouse|	drop down, select WideWorldImporters from the list|
+|Table|	In the first box enter dbo|
+      |	In the second box enter dimension_customer|
 
 
  ![](./media/image35.png)

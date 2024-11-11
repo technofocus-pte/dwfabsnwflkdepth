@@ -681,7 +681,7 @@ syntax.
     +++**Clone Table in another schema+++**. Then, click on **Rename**
     button.
 
-> ![](./media/image70.png)
+     ![](./media/image70.png)
 
 9.  Click on the **Refresh** icon in the command bar below the **Home**
     tab.
@@ -702,99 +702,69 @@ Learn how to create and save a new stored procedure to transform
     stored procedure **dbo.populate\_aggregate\_sale\_by\_city**. This
     stored procedure will create and load
     the **dbo.aggregate\_sale\_by\_date\_city** table in a later step.
-
-> SQLCopy
-> 
-> \--Drop the stored procedure if it already exists.
-> 
-> DROP PROCEDURE IF EXISTS
-> \[dbo\].\[populate\_aggregate\_sale\_by\_city\]
-> 
-> GO
-> 
-> \--Create the populate\_aggregate\_sale\_by\_city stored procedure.
-> 
-> CREATE PROCEDURE \[dbo\].\[populate\_aggregate\_sale\_by\_city\]
-> 
-> AS
-> 
-> BEGIN
-> 
-> \--If the aggregate table already exists, drop it. Then create the
-> table.
-> 
-> DROP TABLE IF EXISTS \[dbo\].\[aggregate\_sale\_by\_date\_city\];
-> 
-> CREATE TABLE \[dbo\].\[aggregate\_sale\_by\_date\_city\]
-> 
-> (
-> 
-> \[Date\] \[DATETIME2\](6),
-> 
-> \[City\] \[VARCHAR\](8000),
-> 
-> \[StateProvince\] \[VARCHAR\](8000),
-> 
-> \[SalesTerritory\] \[VARCHAR\](8000),
-> 
-> \[SumOfTotalExcludingTax\] \[DECIMAL\](38,2),
-> 
-> \[SumOfTaxAmount\] \[DECIMAL\](38,6),
-> 
-> \[SumOfTotalIncludingTax\] \[DECIMAL\](38,6),
-> 
-> \[SumOfProfit\] \[DECIMAL\](38,2)
-> 
-> );
-> 
-> \--Reload the aggregated dataset to the table.
-> 
-> INSERT INTO \[dbo\].\[aggregate\_sale\_by\_date\_city\]
-> 
-> SELECT
-> 
-> FS.\[InvoiceDateKey\] AS \[Date\],
-> 
-> DC.\[City\],
-> 
-> DC.\[StateProvince\],
-> 
-> DC.\[SalesTerritory\],
-> 
-> SUM(FS.\[TotalExcludingTax\]) AS \[SumOfTotalExcludingTax\],
-> 
-> SUM(FS.\[TaxAmount\]) AS \[SumOfTaxAmount\],
-> 
-> SUM(FS.\[TotalIncludingTax\]) AS \[SumOfTotalIncludingTax\],
-> 
-> SUM(FS.\[Profit\]) AS \[SumOfProfit\]
-> 
-> FROM \[dbo\].\[fact\_sale\] AS FS
-> 
-> INNER JOIN \[dbo\].\[dimension\_city\] AS DC
-> 
-> ON FS.\[CityKey\] = DC.\[CityKey\]
-> 
-> GROUP BY
-> 
-> FS.\[InvoiceDateKey\],
-> 
-> DC.\[City\],
-> 
-> DC.\[StateProvince\],
-> 
-> DC.\[SalesTerritory\]
-> 
-> ORDER BY
-> 
-> FS.\[InvoiceDateKey\],
-> 
-> DC.\[StateProvince\],
-> 
-> DC.\[City\];
-> 
-> END
-> 
+       SQLCopy
+      ```
+      /*
+      1. Drop the dimension_city table if it already exists.
+      2. Create the dimension_city table.
+      3. Drop the fact_sale table if it already exists.
+      4. Create the fact_sale table.
+      */
+      
+      --dimension_city
+      DROP TABLE IF EXISTS [dbo].[dimension_city];
+      CREATE TABLE [dbo].[dimension_city]
+          (
+              [CityKey] [int] NULL,
+              [WWICityID] [int] NULL,
+              [City] [varchar](8000) NULL,
+              [StateProvince] [varchar](8000) NULL,
+              [Country] [varchar](8000) NULL,
+              [Continent] [varchar](8000) NULL,
+              [SalesTerritory] [varchar](8000) NULL,
+              [Region] [varchar](8000) NULL,
+              [Subregion] [varchar](8000) NULL,
+              [Location] [varchar](8000) NULL,
+              [LatestRecordedPopulation] [bigint] NULL,
+              [ValidFrom] [datetime2](6) NULL,
+              [ValidTo] [datetime2](6) NULL,
+              [LineageKey] [int] NULL
+          );
+      
+      --fact_sale
+      
+      DROP TABLE IF EXISTS [dbo].[fact_sale];
+      
+      CREATE TABLE [dbo].[fact_sale]
+      
+          (
+              [SaleKey] [bigint] NULL,
+              [CityKey] [int] NULL,
+              [CustomerKey] [int] NULL,
+              [BillToCustomerKey] [int] NULL,
+              [StockItemKey] [int] NULL,
+              [InvoiceDateKey] [datetime2](6) NULL,
+              [DeliveryDateKey] [datetime2](6) NULL,
+              [SalespersonKey] [int] NULL,
+              [WWIInvoiceID] [int] NULL,
+              [Description] [varchar](8000) NULL,
+              [Package] [varchar](8000) NULL,
+              [Quantity] [int] NULL,
+              [UnitPrice] [decimal](18, 2) NULL,
+              [TaxRate] [decimal](18, 3) NULL,
+              [TotalExcludingTax] [decimal](29, 2) NULL,
+              [TaxAmount] [decimal](38, 6) NULL,
+              [Profit] [decimal](18, 2) NULL,
+              [TotalIncludingTax] [decimal](38, 6) NULL,
+              [TotalDryItems] [int] NULL,
+              [TotalChillerItems] [int] NULL,
+              [LineageKey] [int] NULL,
+              [Month] [int] NULL,
+              [Year] [int] NULL,
+              [Quarter] [int] NULL
+          );
+      ```
+  
 > ![](./media/image72.png)
 > 
 > ![](./media/image73.png)

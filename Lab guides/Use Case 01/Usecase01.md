@@ -25,6 +25,7 @@ the various experiences and their integration points, and the Microsoft
 Fabric professional and citizen developer experiences.
 
 **Objectives**
+
     •	Set up a Fabric workspace with trial enabled.
     •	Establish a new Warehouse named WideWorldImporters in Microsoft Fabric.
     •	Load data into the Warehouse_FabricXX workspace using a Data Factory pipeline.

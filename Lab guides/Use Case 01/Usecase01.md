@@ -78,7 +78,7 @@ items.
     the following URL: https://app.fabric.microsoft.com/ then press the
     **Enter** button.
 
-   ![](./media/image1.png)
+     ![](./media/image1.png)
 
 2.  In the **Microsoft Fabric** window, enter assigned credentials, and
     click on the **Submit** button.
@@ -86,7 +86,7 @@ items.
     ![](./media/image2.png)
 
 3.  Then, In the **Microsoft** window enter the password and click on
-    the **Sign in** button**.**
+    the **Sign in** button**.
 
     ![](./media/image3.png)
 
@@ -98,7 +98,7 @@ items.
 
     ![](./media/image5.png)
 
-## **Task 2: Start the Microsoft Fabric (Preview) trial**
+## **Task 2: Start the Microsoft Fabric trial**
 
 Follow these steps to start your Fabric trial.
 
@@ -140,71 +140,54 @@ trial enabled.
     ![](./media/image11.png)
 
 3.  In the Workspaces pane Select **+** **New workspace**.
-
-> ![A screenshot of a computer Description automatically
-> generated](./media/image12.png)
+       [](./media/image12.png)
+     
 
 4.  In the **Create a workspace tab**, enter the following details and
     click on the **Apply** button.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Name</strong></th>
-<th><em><strong>Warehouse_FabricXX</strong> (</em>XX can be a unique number) (here, we entered <em><strong>Warehouse_Fabric29)</strong></em></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Description</strong></td>
-<td>This workspace contains all the artifacts for the data warehouse</td>
-</tr>
-<tr class="even">
-<td><strong>Advanced</strong></td>
-<td>Under <strong>License mode</strong>, select <strong>Trial</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Default storage format</strong></td>
-<td><strong>Small dataset storage format</strong></td>
-</tr>
-</tbody>
-</table>
+    |     |    |
+    |-------|------|
+    |Name	| Warehouse_FabricXX (XX can be a unique number) (here, we entered Warehouse_Fabric29)|
+    |Description|	This workspace contains all the artifacts for the data warehouse|
+    |Advanced|	Under License mode, select Trial|
+    |Default| storage format	Small dataset storage format|
 
-> ![](./media/image13.png)
+       ![](./media/image13.png)
 
-![](./media/image14.png)
+       ![](./media/image14.png)
 
-![](./media/image15.png)
+       ![](./media/image15.png)
 
 5.  Wait for the deployment to complete. It takes 2-3 minutes to
     complete. When your new workspace opens, it should be empty.
 
-> ![](./media/image16.png)
+      ![](./media/image16.png)
 
 6.  In the **Power BI Fabric Lakehouse Tutorial-XX** page, click on the
     **Data Warehouse** icon located at the bottom left and select **Data
     Warehouse** under Datascience.
 
-> ![](./media/image17.png)
+     ![](./media/image17.png)
 
 ## Task 4: Create a Warehouse in Microsoft Fabric
 
 1.  In the **Synapse** **Data Warehouse** page, select **Warehouse** to
     create a lakehouse.
 
-    ![](./media/image18.png)
+     ![](./media/image18.png)
 
 2.  On the **New warehouse** dialog,
     enter +++**WideWorldImporters+++** and click on the **Create**
     button.
 
-    ![](./media/image19.png)
+     ![](./media/image19.png)
 
 3.  When provisioning is complete, the **WideWorldImporters**
     warehouse landing page appears.
 
-    ![A screenshot of a computer Description automatically
-    generated](./media/image20.png)
+     ![A screenshot of a computer Description automatically
+     generated](./media/image20.png)
 
 # Exercise 2: Ingest data into a Warehouse in Microsoft Fabric
 
@@ -214,31 +197,31 @@ trial enabled.
     select **Warehouse\_FabricXX** in the left-sided navigation menu to
     return to the workspace item list.
 
-    ![](./media/image21.png)
+     ![](./media/image21.png)
 > 
-    ![A screenshot of a computer Description automatically
+     ![A screenshot of a computer Description automatically
     generated](./media/image22.png)
 
 2.  In the **Warehouse\_FabricXX** page, select +**New item**. Then,
     click Data pipeline to view the full list of available items under
     Get data.
 
-    ![](./media/image23.png)
+     ![](./media/image23.png)
 
 3.  On the **New** **pipeline** dialog box, in the **Name** field, enter
     +++**Load Customer Data+++** and click on the **Create** button.
 
-> ![](./media/image24.png)
+      ![](./media/image24.png)
 
 4.  In the **Load Customer Data** page, navigate to **Start building
     your data pipeline** section and click on **Pipeline activity**.
 
-> ![](./media/image25.png)
+       ![](./media/image25.png)
 
 5.  Navigate and select **Copy data** under **Move
     &** **transform** section.
 
-> ![](./media/image26.png)
+       ![](./media/image26.png)
 
 6.  Select the newly created **Copy data** **1** activity from the
     design canvas to configure it.
@@ -246,23 +229,23 @@ trial enabled.
 > **Note**: Drag the horizonal line in the design canvas to have a
 > complete view of various features.
 > 
-> ![](./media/image27.png)
+   ![](./media/image27.png)
 
 7.  On the **General** tab, in the **Name** field**,** enter +++**CD
     Load dimension\_customer+++** .
 
-> ![](./media/image28.png)
+     ![](./media/image28.png)
 
 8.  On the **Source** page, select the **Connection** dropdown.
     Select **More** to see all of the data sources you can choose from,
     including data sources in your local OneLake data hub.
 
-> ![](./media/image29.png)
+     ![](./media/image29.png)
 
 9.  On the **Get data** window, search **Azure Blob Storage** in, then
     click on the **Azure Blob Storage** button.
 
-> ![](./media/image30.png)
+     ![](./media/image30.png)
 
 10. On the **Connection settings** pane that appears on the right side,
     configure the following settings and click on the **Create** button.
@@ -270,7 +253,7 @@ trial enabled.
 <!-- end list -->
 
   - In the **Account name or URL**, enter
-    +++**https://fabrictutorialdata.blob.core.windows.net/sampledata/+++**
+    +++https://fabrictutorialdata.blob.core.windows.net/sampledata/+++
 
 <!-- end list -->
 
@@ -310,66 +293,49 @@ trial enabled.
         unable to see **Parquet**, then type in the search box and then
         select it)
 
-![](./media/image32.png)
+           ![](./media/image32.png)
 
 13. Click on **Preview data** on the right side of **File path** setting
     to ensure that there are no errors and then click on **close.**
 
-> ![](./media/image33.png)
+      ![](./media/image33.png)
 
 ![A screenshot of a computer Description automatically
 generated](./media/image34.png)
 
 14. On the **Destination** tab, enter the following settings.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Connection</strong></th>
-<th><strong>WideWorldImporters</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Table option</strong></td>
-<td>select the <strong>Auto create table</strong> radio button.</td>
-</tr>
-<tr class="even">
-<td><strong>Data Warehouse</strong></td>
-<td>drop down, select <strong>WideWorldImporters</strong> from the list</td>
-</tr>
-<tr class="odd">
-<td><strong>Table</strong></td>
-<td><ul>
-<li><p>In the first box enter <strong>dbo</strong></p></li>
-<li><p>In the second box enter <strong>dimension_customer</strong></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+|    |    |
+|-|---|-----|
+Connection| WideWorldImporters|
+Table option|	select the Auto create table radio button.|
+Data Warehouse|	drop down, select WideWorldImporters from the list|
+Table|	In the first box enter dbo|
+     |	In the second box enter dimension_customer|
 
-> ![](./media/image35.png)
+
+ ![](./media/image35.png)
 
 15. From the ribbon, select **Run**.
 
-> ![](./media/image36.png)
+  ![](./media/image36.png)
 
 16. In the **Save and run?** dialog box, click on **Save and run**
     button.
 
-> ![](./media/image37.png)
+     ![](./media/image37.png)
 > 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image38.png)
+   ![A screenshot of a computer Description automatically
+   generated](./media/image38.png)
 > 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image39.png)
+   ![A screenshot of a computer Description automatically
+   generated](./media/image39.png)
 
 17. Monitor the copy activity's progress on the **Output** page and wait
     for it to complete.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image40.png)
+     ![A screenshot of a computer Description automatically
+      generated](./media/image40.png)
 
 # Exercise 3: Create tables in a Data Warehouse
 
@@ -378,14 +344,14 @@ generated](./media/image34.png)
 1.  On **Load Customer Data** page, click on **Warehouse\_FabricXX**
     workspace in the left-sided navigation bar.
 
-> ![](./media/image41.png)
+     ![](./media/image41.png)
 
 2.  In the **Syanapse Data Engineering** **Warehouse\_FabricXX** page,
     carefully navigate and click on **WideWorldImporters** having
     **Warehouse** type as shown in the below
     image.
 
-![](./media/image42.png)
+      ![](./media/image42.png)
 
 3.  On the **WideWorldImporters** page, go to the **Home **tab, select **SQL** from the drop
     down, and click on **New SQL query**.![](./media/image43.png)
@@ -510,13 +476,13 @@ generated](./media/image34.png)
 5.  To save this query, right-click on the **SQL query 1** tab just
     above the editor and select **Rename**.
 
-> ![](./media/image46.png)
+      ![](./media/image46.png)
 
 6.  In the **Rename** dialog box, under **Name** field, enter
     +++**Create Tables+++** to change the name of **SQL query 1**. Then,
     click on the **Rename** button.
 
-> ![](./media/image47.png)
+     ![](./media/image47.png)
 
 7.  Validate the table was created successfully by selecting the
     **refresh icon** button on the ribbon.

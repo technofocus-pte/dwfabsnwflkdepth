@@ -26,22 +26,22 @@ Fabric professional and citizen developer experiences.
 
 **Objectives**
 
-•	Set up a Fabric workspace with trial enabled.
-•	Establish a new Warehouse named WideWorldImporters in Microsoft Fabric.
-•	Load data into the Warehouse_FabricXX workspace using a Data Factory pipeline.
-•	Generate dimension_city and fact_sale tables within the data warehouse.
-•	Populate dimension_city and fact_sale tables with data from Azure Blob Storage.
-•	Create clones of dimension_city and fact_sale tables in the Warehouse.
-•	Clone dimension_city and fact_sale tables into the dbo1 schema.
-•	Develop a stored procedure to transform data and create aggregate_sale_by_date_city table.
-•	Generate a query using the visual query builder to merge and aggregate data.
-•	Use a notebook to query and analyze data from the dimension_customer table.
-•	Include WideWorldImporters and ShortcutExercise warehouses for cross-querying.
-•	Execute a T-SQL query across WideWorldImporters and ShortcutExercise warehouses.
-•	Enable Azure Maps visual integration in the Admin portal.
-•	Generate column chart, map, and table visuals for Sales Analysis report.
-•	Create a report using data from the WideWorldImporters dataset in the OneLake data hub.
-•	Remove the workspace and its associated items.
+    •	Set up a Fabric workspace with trial enabled.
+    •	Establish a new Warehouse named WideWorldImporters in Microsoft Fabric.
+    •	Load data into the Warehouse_FabricXX workspace using a Data Factory pipeline.
+    •	Generate dimension_city and fact_sale tables within the data warehouse.
+    •	Populate dimension_city and fact_sale tables with data from Azure Blob Storage.
+    •	Create clones of dimension_city and fact_sale tables in the Warehouse.
+    •	Clone dimension_city and fact_sale tables into the dbo1 schema.
+    •	Develop a stored procedure to transform data and create aggregate_sale_by_date_city table.
+    •	Generate a query using the visual query builder to merge and aggregate data.
+    •	Use a notebook to query and analyze data from the dimension_customer table.
+    •	Include WideWorldImporters and ShortcutExercise warehouses for cross-querying.
+    •	Execute a T-SQL query across WideWorldImporters and ShortcutExercise warehouses.
+    •	Enable Azure Maps visual integration in the Admin portal.
+    •	Generate column chart, map, and table visuals for Sales Analysis report.
+    •	Create a report using data from the WideWorldImporters dataset in the OneLake data hub.
+    •	Remove the workspace and its associated items.
 
 
 # **Exercise 1:** Create a Microsoft Fabric workspace

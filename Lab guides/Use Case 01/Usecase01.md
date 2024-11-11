@@ -26,50 +26,23 @@ Fabric professional and citizen developer experiences.
 
 **Objectives**
 
-  - Set up a Fabric workspace with trial enabled.
+•	Set up a Fabric workspace with trial enabled.
+•	Establish a new Warehouse named WideWorldImporters in Microsoft Fabric.
+•	Load data into the Warehouse_FabricXX workspace using a Data Factory pipeline.
+•	Generate dimension_city and fact_sale tables within the data warehouse.
+•	Populate dimension_city and fact_sale tables with data from Azure Blob Storage.
+•	Create clones of dimension_city and fact_sale tables in the Warehouse.
+•	Clone dimension_city and fact_sale tables into the dbo1 schema.
+•	Develop a stored procedure to transform data and create aggregate_sale_by_date_city table.
+•	Generate a query using the visual query builder to merge and aggregate data.
+•	Use a notebook to query and analyze data from the dimension_customer table.
+•	Include WideWorldImporters and ShortcutExercise warehouses for cross-querying.
+•	Execute a T-SQL query across WideWorldImporters and ShortcutExercise warehouses.
+•	Enable Azure Maps visual integration in the Admin portal.
+•	Generate column chart, map, and table visuals for Sales Analysis report.
+•	Create a report using data from the WideWorldImporters dataset in the OneLake data hub.
+•	Remove the workspace and its associated items.
 
-  - Establish a new Warehouse named WideWorldImporters in Microsoft
-    Fabric.
-
-  - Load data into the Warehouse\_FabricXX workspace using a Data
-    Factory pipeline.
-
-  - Generate dimension\_city and fact\_sale tables within the data
-    warehouse.
-
-  - Populate dimension\_city and fact\_sale tables with data from Azure
-    Blob Storage.
-
-  - Create clones of dimension\_city and fact\_sale tables in the
-    Warehouse.
-
-  - Clone dimension\_city and fact\_sale tables into the dbo1 schema.
-
-  - Develop a stored procedure to transform data and create
-    aggregate\_sale\_by\_date\_city table.
-
-  - Generate a query using the visual query builder to merge and
-    aggregate data.
-
-  - Use a notebook to query and analyze data from the
-    dimension\_customer table.
-
-  - Include WideWorldImporters and ShortcutExercise warehouses for
-    cross-querying.
-
-  - Execute a T-SQL query across WideWorldImporters and ShortcutExercise
-    warehouses.
-
-  - Enable Azure Maps visual integration in the Admin portal.
-
-  - Generate column chart, map, and table visuals for Sales Analysis
-    report.
-
-  - Create a report using data from the WideWorldImporters dataset in
-    the OneLake data hub.
-
-  - Remove the workspace and its associated
-items.
 
 # **Exercise 1:** Create a Microsoft Fabric workspace
 
@@ -179,7 +152,7 @@ trial enabled.
      ![](./media/image18.png)
 
 2.  On the **New warehouse** dialog,
-    enter +++**WideWorldImporters+++** and click on the **Create**
+    enter +++WideWorldImporters+++ and click on the **Create**
     button.
 
      ![](./media/image19.png)
@@ -187,23 +160,21 @@ trial enabled.
 3.  When provisioning is complete, the **WideWorldImporters**
     warehouse landing page appears.
 
-     ![A screenshot of a computer Description automatically
-     generated](./media/image20.png)
+   ![](./media/image20.png)
 
 # Exercise 2: Ingest data into a Warehouse in Microsoft Fabric
 
 ## Task 1: Ingest data into a Warehouse
 
 1.  From the **WideWorldImporters** warehouse landing page,
-    select **Warehouse\_FabricXX** in the left-sided navigation menu to
+    select **Warehouse_FabricXX** in the left-sided navigation menu to
     return to the workspace item list.
 
      ![](./media/image21.png)
-> 
-     ![A screenshot of a computer Description automatically
-    generated](./media/image22.png)
+ 
+    ![](./media/image22.png)
 
-2.  In the **Warehouse\_FabricXX** page, select +**New item**. Then,
+2.  In the **Warehouse_FabricXX** page, select **+New item**. Then,
     click Data pipeline to view the full list of available items under
     Get data.
 
@@ -220,20 +191,19 @@ trial enabled.
        ![](./media/image25.png)
 
 5.  Navigate and select **Copy data** under **Move
-    &** **transform** section.
+    &transform** section.
 
        ![](./media/image26.png)
 
 6.  Select the newly created **Copy data** **1** activity from the
     design canvas to configure it.
 
-> **Note**: Drag the horizonal line in the design canvas to have a
-> complete view of various features.
-> 
-   ![](./media/image27.png)
+**Note**: Drag the horizonal line in the design canvas to have a
+complete view of various features.
+    ![](./media/image27.png)
 
-7.  On the **General** tab, in the **Name** field**,** enter +++**CD
-    Load dimension\_customer+++** .
+7.  On the **General** tab, in the **Name** field, enter +++CD
+    Load dimension_customer+++ .
 
      ![](./media/image28.png)
 
@@ -251,92 +221,59 @@ trial enabled.
 10. On the **Connection settings** pane that appears on the right side,
     configure the following settings and click on the **Create** button.
 
-<!-- end list -->
+    •	In the Account name or URL, enter +++https://fabrictutorialdata.blob.core.windows.net/sampledata/+++
+    •	In the Connection credentials section, click on the dropdown under Connection, then select Create new connection.
+    •	In Connection name field, enter +++Wide World Importers Public Sample+++.
+    •	Set the Authentication kind to Anonymous.
 
-  - In the **Account name or URL**, enter
-    +++https://fabrictutorialdata.blob.core.windows.net/sampledata/+++
-
-<!-- end list -->
-
-  - In the **Connection credentials** section, click on the dropdown
-    under **Connection**, then select **Create new connection**.
-
-<!-- end list -->
-
-  - In **Connection name** field**,** enter +++**Wide World Importers
-    Public Sample+++**.
-
-<!-- end list -->
-
-  - Set the **Authentication kind** to **Anonymous**.
-
-![](./media/image31.png)
+    ![](./media/image31.png)
 
 11. Change the remaining settings on the **Source** page of the copy
-    activity as follows to reach the .parquet files
-    in **https://fabrictutorialdata.blob.core.windows.net/sampledata/WideWorldImportersDW/parquet/full/dimension\_customer/\*.parquet**
+    activity as follows to reach the .parquet files in
+     **https://fabrictutorialdata.blob.core.windows.net/sampledata/WideWorldImportersDW/parquet/full/dimension_customer/*.parquet**
 
 12. In the **File path** text boxes, provide:
 
-<!-- end list -->
-
-  - **Container:** **sampledata**
-
-<!-- end list -->
-
-  - **File path - Directory:** **WideWorldImportersDW/tables**
-
-<!-- end list -->
-
-  - **File path - File name:** **dimension\_customer.parquet**
-    
-      - In the **File format** drop down, choose **Parquet** (if you are
-        unable to see **Parquet**, then type in the search box and then
-        select it)
-
-           ![](./media/image32.png)
+    •	Container: **+++sampledata+++**
+    •	File path - Directory: **+++WideWorldImportersDW/tables+++**
+    •	 File path - File name: **+++dimension_customer.parquet+++**
+    •	In the File format drop down, choose **Parquet** (if you are unable to see Parquet, then type in the search box and then select it)
+    ![](./media/image32.png)
 
 13. Click on **Preview data** on the right side of **File path** setting
     to ensure that there are no errors and then click on **close.**
 
       ![](./media/image33.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image34.png)
+   ![](./media/image34.png)
 
 14. On the **Destination** tab, enter the following settings.
 
-|     |    |
-|-------|------|
-|Connection| WideWorldImporters|
-|Table option|	select the Auto create table radio button.|
-|Data Warehouse|	drop down, select WideWorldImporters from the list|
-|Table|	In the first box enter dbo|
-      |	In the second box enter dimension_customer|
-
-
- ![](./media/image35.png)
+  |     |    |
+  |-------|------|
+  |Connection| WideWorldImporters|
+  |Table option|	select the Auto create table radio button.|
+  |Data Warehouse|	drop down, select WideWorldImporters from the list|
+  |Table|	•	In the first box enter dbo                                                                                   •	In the second box enter dimension_customer|
+    ![](./media/image35.png)
 
 15. From the ribbon, select **Run**.
 
-  ![](./media/image36.png)
+     ![](./media/image36.png)
 
 16. In the **Save and run?** dialog box, click on **Save and run**
     button.
 
      ![](./media/image37.png)
-> 
-   ![A screenshot of a computer Description automatically
-   generated](./media/image38.png)
-> 
-   ![A screenshot of a computer Description automatically
-   generated](./media/image39.png)
+
+     ![](./media/image38.png)
+ 
+     ![](./media/image39.png)
 
 17. Monitor the copy activity's progress on the **Output** page and wait
     for it to complete.
 
-     ![A screenshot of a computer Description automatically
-      generated](./media/image40.png)
+    ![](./media/image40.png)
 
 # Exercise 3: Create tables in a Data Warehouse
 

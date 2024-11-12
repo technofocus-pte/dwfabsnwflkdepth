@@ -111,8 +111,7 @@ Now that you have a workspace, it’s time to create a data warehouse.
 3.  After a minute or so, a new warehouse will be created and populated
     with sample data for a taxi ride analysis scenario.
 
-![A screenshot of a computer Description automatically
-generated](./media/image16.png)
+    ![](./media/image16.png)
 
 ## Task 3: Explore dynamic management views
 
@@ -123,73 +122,60 @@ warehouse instance.
 1.  In the **sample-dw** data warehouse page, in the **New SQL
     query** drop-down list, select **New SQL query**.
 
-> ![](./media/image17.png)
+     ![](./media/image17.png)
 
 2.  In the new blank query pane, enter the following Transact-SQL code
-    to query the **sys.dm\_exec\_connections** DMV:
+    to query the **sys.dm_exec_connections** DMV:
 
-> sqlCopy
-> 
-> SELECT \* FROM sys.dm\_exec\_connections;
+     sqlCopy
+    
+    +++SELECT * FROM sys.dm_exec_connections;+++
 
 3.  Use the **▷ Run** button to run the SQL script and view the results,
     which include details of all connections to the data warehouse.
 
-![](./media/image18.png)
-
-![](./media/image19.png)
+    ![](./media/image18.png)
+    
+    ![](./media/image19.png)
 
 4.  Modify the SQL code to query the **sys.dm\_exec\_sessions** DMV,
     like this:
 
-sqlCopy
-
-SELECT \* FROM sys.dm\_exec\_sessions;
+    sqlCopy
+    
+    +++SELECT \* FROM sys.dm\_exec\_sessions;+++
 
 5.  **Run** the modified query and view the results, which show details
     of all authenticated sessions
 
-> ![](./media/image20.png)
+     ![](./media/image20.png)
 
-6.  Modify the SQL code to query the **sys.dm\_exec\_requests** DMV,
+6.  Modify the SQL code to query the **sys.dm_exec_requests** DMV,
     like this:
 
-> sqlCopy
-> 
-> SELECT \* FROM sys.dm\_exec\_requests;
-
+     sqlCopy
+     
+     +++SELECT * FROM sys.dm_exec_requests;+++
 7.  Run the modified query and view the results, which show details of
     all requests being executed in the data warehouse.
 
-![](./media/image21.png)
+    ![](./media/image21.png)
 
 8.  Modify the SQL code to join the DMVs and return information about
     currently running requests in the same database, like this:
-
-> sqlCopy
-> 
-> SELECT connections.connection\_id,
-> 
-> sessions.session\_id, sessions.login\_name, sessions.login\_time,
-> 
-> requests.command, requests.start\_time, requests.total\_elapsed\_time
-> 
-> FROM sys.dm\_exec\_connections AS connections
-> 
-> INNER JOIN sys.dm\_exec\_sessions AS sessions
-> 
-> ON connections.session\_id=sessions.session\_id
-> 
-> INNER JOIN sys.dm\_exec\_requests AS requests
-> 
-> ON requests.session\_id = sessions.session\_id
-> 
-> WHERE requests.status = 'running'
-> 
-> AND requests.database\_id = DB\_ID()
-> 
-> ORDER BY requests.total\_elapsed\_time DESC;
-
+      ```
+      SELECT connections.connection_id,
+       sessions.session_id, sessions.login_name, sessions.login_time,
+       requests.command, requests.start_time, requests.total_elapsed_time
+      FROM sys.dm_exec_connections AS connections
+      INNER JOIN sys.dm_exec_sessions AS sessions
+          ON connections.session_id=sessions.session_id
+      INNER JOIN sys.dm_exec_requests AS requests
+          ON requests.session_id = sessions.session_id
+      WHERE requests.status = 'running'
+          AND requests.database_id = DB_ID()
+      ORDER BY requests.total_elapsed_time DESC;
+      ```
 9.  **Run** the modified query and view the results, which show details
     of all running queries in the database (including this one).
 

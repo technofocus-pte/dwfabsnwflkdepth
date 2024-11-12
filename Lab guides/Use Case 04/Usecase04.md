@@ -36,68 +36,51 @@ trial enabled.
     the following URL: https://app.fabric.microsoft.com/ then press the
     **Enter** button.
 
-> ![A search engine window with a red box Description automatically
-> generated with medium confidence](./media/image1.png)
+     ![](./media/image1.png)
 
 2.  In the **Microsoft Fabric** window, enter assigned credentials, and
     click on the **Submit** button.
 
-> ![A close up of a white and green object Description automatically
-> generated](./media/image2.png)
+     ![](./media/image2.png)
 
 3.  Then, In the **Microsoft** window enter the password and click on
-    the **Sign in** button**.**
+    the **Sign in** button . 
 
-> ![A login screen with a red box and blue text Description
-> automatically generated](./media/image3.png)
+     ![](./media/image3.png)
 
 4.  In **Stay signed in?** window, click on the **Yes** button.
 
-> ![A screenshot of a computer error Description automatically
-> generated](./media/image4.png)
+     ![](./media/image4.png)
 
 5.  On the **Microsoft Fabric** home page, select the **Power BI**
     template.
 
-> ![](./media/image5.png)
+    ![](./media/image5.png)
 
 6.  In the **Power BI Home** page menu bar on the left,
     select **Workspaces** (the icon looks similar to 🗇).
 
-> ![](./media/image6.png)
+    ![](./media/image6.png)
 
 7.  In the Workspaces pane Select **+** **New workspace**.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image7.png)
+     ![](./media/image7.png)
 
-1.  In the **Create a workspace tab**, enter the following details and
+8.  In the **Create a workspace tab**, enter the following details and
     click on the **Apply** button.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Name</strong></th>
-<th><em><strong>+++dp-FabricXX+++</strong> (</em>XX can be a unique number)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Advanced</strong></td>
-<td>Under <strong>License mode</strong>, select <strong>Trial</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Default storage format</strong></td>
-<td><strong>Small dataset storage format</strong></td>
-</tr>
-</tbody>
-</table>
+      |   |   |
+      |---|---|
+      |Name|	+++dp-FabricXX+++ (XX can be a unique number) |
+      |Advanced|	Under License mode, select Trial|
+      |Default storage format|	Small dataset storage format|
 
-> ![](./media/image8.png)
 
-![](./media/image9.png)
-
-![](./media/image10.png)
+      ![](./media/image8.png)
+      
+      ![](./media/image9.png)
+      
+      ![](./media/image10.png)
 
 2.  Wait for the deployment to complete. It takes 2-3 minutes to
     complete. When your new workspace opens, it should be empty.

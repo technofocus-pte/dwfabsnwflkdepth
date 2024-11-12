@@ -82,17 +82,15 @@ trial enabled.
       
       ![](./media/image10.png)
 
-2.  Wait for the deployment to complete. It takes 2-3 minutes to
+9.  Wait for the deployment to complete. It takes 2-3 minutes to
     complete. When your new workspace opens, it should be empty.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image11.png)
+     ![](./media/image11.png)
 
-3.  In the **Power BI dp\_FabricXX**page, click on the **Data
+10.  In the **Power BI dp_FabricXX**page, click on the **Data
     Warehouse** icon located at the bottom left and select **Data
     Warehouse** under Datascience..
-
-> ![](./media/image12.png)
+    ![](./media/image12.png)
 
 ## Task 2:Create a sample data warehouse
 

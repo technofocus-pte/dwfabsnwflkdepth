@@ -25,73 +25,68 @@ the end of this lab, you will be able to:
 ## Task 1:Add users and assign licenses at the same time
 
 1.  Open a new tab on your browser and enter the following link in the
-    address bar
-    [https://admin.cloud.microsoft](https://go.microsoft.com/fwlink/p/?linkid=2024339)
+    address bar++https://go.microsoft.com/fwlink/p/?linkid=2024339+++
 
-![](./media/image1.png)
+    ![](./media/image1.png)
 
 2.  On the Microsoft 365 admin center page, select **Add a user**
 
-![](./media/image2.png)
+    ![](./media/image2.png)
 
 3.  In the **Add a user** tab, enter the user details and click on the
-    ‘**Next**’ button:
+    **Next** button:
 
-<!-- end list -->
+      - **First name:** sample
+    
+      - **Last name:**user1
+    
+      - **User name:**sampleuser1
 
-  - **First name:** sample
-
-  - **Last name:**user1
-
-  - **User name:**sampleuser1
-
-![](./media/image3.png)
+      ![](./media/image3.png)
 
 4.  In the **Add a user** tab, under the **Assign product licenses**
     pane, select all licenses and click on the **Next** button.
 
-> ![](./media/image4.png)
+      ![](./media/image4.png)
 
 5.  Click on the Next button.
 
-> ![](./media/image5.png)
+      ![](./media/image5.png)
 
 6.  Review the user details and click on the **Finish adding** button.
 
-![](./media/image6.png)
+    ![](./media/image6.png)
 
 7.  Copy the **Username** and **Password** and paste them on a notepad,
     as you need them in the upcoming task.
 
-> ![](./media/image7.png)
+     ![](./media/image7.png)
 
 8.  Follow the previous steps to add another user and enter the user
     details.
 
-<!-- end list -->
+     - **First name:** sample
+  
+    - **Last name:** user2
+  
+    - **User name:** sampleuser2
 
-  - **First name:** sample
+      ![](./media/image8.png)
+    
+      ![](./media/image9.png)
+    
+      ![](./media/image10.png)
 
-  - **Last name:**user2
+      ![](./media/image11.png)
 
-  - **User name:**sampleuser2
-
-![](./media/image8.png)
-
-![](./media/image9.png)
-
-![](./media/image10.png)
-
-![](./media/image11.png)
-
-> ![](./media/image12.png)
+      ![](./media/image12.png)
 
 9.  Copy the **Username** and **Password** and paste them on a notepad,
     as you need them in the upcoming task.
 
-> ![](./media/image13.png)
-> 
-> ![](./media/image14.png)
+      ![](./media/image13.png)
+ 
+     ![](./media/image14.png)
 
 ## Task 2: Create a workspace
 
@@ -99,131 +94,104 @@ Before working with data in Fabric, create a workspace with the Fabric
 trial enabled.
 
 1.  Open your browser, navigate to the address bar, and type or paste
-    the following URL: https://app.fabric.microsoft.com/ then press the
+    the following URL: +++https://app.fabric.microsoft.com/+++ then press the
     **Enter** button.
 
-> ![A search engine window with a red box Description automatically
-> generated with medium confidence](./media/image15.png)
+     ![](./media/image15.png)
 
 2.  In the **Microsoft Fabric** window, enter assigned credentials, and
     click on the **Submit** button.
 
-> ![A close up of a white and green object Description automatically
-> generated](./media/image16.png)
+     ![](./media/image16.png)
 
 3.  Then, In the **Microsoft** window enter the password and click on
     the **Sign in** button**.**
 
-> ![A login screen with a red box and blue text Description
-> automatically generated](./media/image17.png)
+     ![](./media/image17.png)
 
 4.  In **Stay signed in?** window, click on the **Yes** button.
 
-> ![A screenshot of a computer error Description automatically
-> generated](./media/image18.png)
+     ![](./media/image18.png)
 
 5.  On the **Microsoft Fabric** home page, select the **Power BI**
     template.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image19.png)
+     ![](./media/image19.png)
 
 6.  In the **Power BI Home** page menu bar on the left,
     select **Workspaces** (the icon looks similar to 🗇).
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image20.png)
+     ![](./media/image20.png)
 
 7.  In the Workspaces pane Select **+** **New workspace**.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image21.png)
+     ![](./media/image21.png)
 
 8.  In the **Create a workspace tab**, enter the following details and
     click on the **Apply** button.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Name</strong></th>
-<th><em><strong>+++Warehouse_FabricXX+++</strong> (</em>XX can be a unique number) (here, we entered <em><strong>Warehouse_Fabric29)</strong></em></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Description</strong></td>
-<td>This workspace contains all the artifacts for the data warehouse</td>
-</tr>
-<tr class="even">
-<td><strong>Advanced</strong></td>
-<td>Under <strong>License mode</strong>, select <strong>Trial</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Default storage format</strong></td>
-<td><strong>Small dataset storage format</strong></td>
-</tr>
-</tbody>
-</table>
+    |   | |
+    |-----|-----|
+    |Name	|+++Warehouse_FabricXX+++ (XX can be a unique number) (here, we entered Warehouse_Fabric29)|
+    |Description|	This workspace contains all the artifacts for the data warehouse|
+    |Advanced|	Under License mode, select Trial|
+    |Default storage format|	Small dataset storage format|
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image22.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image23.png)
+     ![](./media/image22.png)
+    
+     ![](./media/image23.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image24.png)
+     ![](./media/image24.png)
 
 9.  Wait for the deployment to complete. It takes 1-2minutes to
     complete. When your new workspace opens, it should be empty.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image25.png)
+      ![](./media/image25.png)
 
 ## Task3: Give users access to workspaces
 
 1.  On the **Synapse Data Warehouse** home page, select **Mange access**
 
-> ![](./media/image26.png)
+      ![](./media/image26.png)
 
 2.  In the **Manage access** tab, click on the **+Add people or groups**
-    button![](./media/image27.png)
+    button
+    ![](./media/image27.png)
 
 3.  In the **Add people** tab, enter the name or email of
     **sampleuser1**, select the **Admin** role, and then click **Add.**
 
-> ![](./media/image28.png)
+      ![](./media/image28.png)
 
 4.  In the **Add people** tab, enter the name or email of
     **sampleuser2**, select the **Viewer** role, and then click **Add.**
 
-> ![](./media/image29.png)
-> 
-> ![](./media/image30.png)
+     ![](./media/image29.png)
+  
+     ![](./media/image30.png)
 
 ## Task 4: Create a Warehouse in Microsoft Fabric
 
-1.  In the **Power BI Warehouse\_FabricXX** page, click on the **Data
+1.  In the **Power BI Warehouse_FabricXX** page, click on the **Data
     Warehouse** icon located at the bottom left and select **Data
     Warehouse** under Datascience.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image31.png)
+      ![](./media/image31.png)
 
 2.  In the **Synapse** **Data Warehouse** page, select **Warehouse** to
     create a lakehouse.
 
-> ![](./media/image32.png)
+     ![](./media/image32.png)
 
 3.  On the **New warehouse** dialog, enter +++**datawarehouse+++** and
     click on the **Create** button.
 
-> ![](./media/image33.png)
+      ![](./media/image33.png)
 
-5.  After a minute or so, a new warehouse will be created:
+4.  After a minute or so, a new warehouse will be created:
 
-![A screenshot of a computer Description automatically
-generated](./media/image34.png)
+    ![](./media/image34.png)
 
 ## Task 5: Apply dynamic data masking rules to columns in a table
 
@@ -237,78 +205,62 @@ mask, and a custom string mask.
 
 1.  In your warehouse, select the **T-SQL** tile,
 
-> ![](./media/image35.png)
+     ![](./media/image35.png)
 
 2.  Replace the default **SQL** code with the following T-SQL statements
     to create a table and to insert and view data.
-
-> codeCopy
-> 
-> CREATE TABLE dbo.Customers
-> 
-> (
-> 
-> CustomerID INT NOT NULL,
-> 
-> FirstName varchar(50) MASKED WITH (FUNCTION =
-> 'partial(1,"XXXXXXX",0)') NULL,
-> 
-> LastName varchar(50) NOT NULL,
-> 
-> Phone varchar(20) MASKED WITH (FUNCTION = 'default()') NULL,
-> 
-> Email varchar(50) MASKED WITH (FUNCTION = 'email()') NULL
-> 
-> );
-> 
-> INSERT dbo.Customers (CustomerID, FirstName, LastName, Phone, Email)
-> VALUES
-> 
-> (29485,'Catherine','Abel','555-555-5555','catherine0@adventure-works.com'),
-> 
-> (29486,'Kim','Abercrombie','444-444-4444','kim2@adventure-works.com'),
-> 
-> (29489,'Frances','Adams','333-333-3333','frances0@adventure-works.com');
-> 
-> SELECT \* FROM dbo.Customers;
+      ```
+      CREATE TABLE dbo.Customers
+      (   
+          CustomerID INT NOT NULL,   
+          FirstName varchar(50) MASKED WITH (FUNCTION = 'partial(1,"XXXXXXX",0)') NULL,     
+          LastName varchar(50) NOT NULL,     
+          Phone varchar(20) MASKED WITH (FUNCTION = 'default()') NULL,     
+          Email varchar(50) MASKED WITH (FUNCTION = 'email()') NULL   
+      );
+         
+      INSERT dbo.Customers (CustomerID, FirstName, LastName, Phone, Email) VALUES
+      (29485,'Catherine','Abel','555-555-5555','catherine0@adventure-works.com'),
+      (29486,'Kim','Abercrombie','444-444-4444','kim2@adventure-works.com'),
+      (29489,'Frances','Adams','333-333-3333','frances0@adventure-works.com');
+         
+      SELECT * FROM dbo.Customers;
+      ```
 
 3.  Use the **▷ Run** button to run the SQL script, which creates a new
     table named **Customers** in the **dbo** schema of the data
     warehouse.
 
-> ![](./media/image36.png)
+     ![](./media/image36.png)
 
-When users who are restricted from seeing unmasked data query the table,
-the **FirstName** column will show the first letter of the string with
-XXXXXXX and none of the last characters. The **Phone** column will show
-xxxx. The **Email** column will show the first letter of the email
-address followed by XXX@XXX.com. This approach ensures that sensitive
-data remains confidential, while still allowing restricted users to
-query the table.
+    When users who are restricted from seeing unmasked data query the table,
+    the **FirstName** column will show the first letter of the string with
+    XXXXXXX and none of the last characters. The **Phone** column will show
+    xxxx. The **Email** column will show the first letter of the email
+    address followed by XXX@XXX.com. This approach ensures that sensitive
+    data remains confidential, while still allowing restricted users to
+    query the table.
 
-> ![](./media/image37.png)
+      ![](./media/image37.png)
 
 4.  Then, in the **Explorer** pane,
-    expand **Schemas** \> **dbo** \> **Tables** and verify that
+    expand **Schemas** > **dbo** > **Tables** and verify that
     the **Customers** table has been created. The SELECT statement
     returns unmasked data for you because as the workspace creator,
     you’re a member of the Workspace Admin role which can see unmasked
     data.
 
-> ![](./media/image38.png)
+    ![](./media/image38.png)
 
 5.  Connect as a test user that’s a member of the **Viewer** workspace
     role and run the following T-SQL statement.
 
-> codeCopy
-> 
-> SELECT \* FROM dbo.Customers;
-> 
-> ![](./media/image39.png)
-> 
-> The test user hasn’t been granted UNMASK permission so data returned
-> for the FirstName, Phone, and Email columns is masked because those
-> columns were defined with a mask in the CREATE TABLE statement.
+    +++SELECT * FROM dbo.Customers;+++
+      ![](./media/image39.png)
+ 
+      The test user hasn’t been granted UNMASK permission so data returned
+     for the FirstName, Phone, and Email columns is masked because those
+     columns were defined with a mask in the CREATE TABLE statement.
 
 6.  Reconnect as yourself, the Workspace Admin, and run the following
     T-SQL to unmask data for the test user.
@@ -317,67 +269,57 @@ query the table.
     role(In this use case, we are assigning the Viewer role to **sample
     User2**)
 
-> codeCopy
-> 
-> GRANT UNMASK ON dbo.Customers TO
-> \[\<username\>@\<your\_domain\>.com\];
+   +++GRANT UNMASK ON dbo.Customers TO [<username>@<your_domain>.com];+++
 
 7.  Use the **▷ Run** button to run the script.
 
-![](./media/image40.png)
+    ![](./media/image40.png)
 
 8.  Open your browser, navigate to the address bar, and type or paste
     the following URL: **https://app.fabric.microsoft.com/** then press
     the **Enter** button.
 
-> ![A search engine window with a red box Description automatically
-> generated with medium confidence](./media/image15.png)
+      ![](./media/image15.png)
 
 9.  In the **Microsoft Fabric** window, enter **sample User2**
     credentials(which you have saved in Task 1), and click on the
     **Submit** button.
 
-> ![A screenshot of a computer screen Description automatically
-> generated](./media/image41.png)
+      ![](./media/image41.png)
 
 10. Then, In the **Microsoft** window enter the **sample User2**
     password and click on the **Sign in** button**.**
 
-> ![A screenshot of a login box Description automatically
-> generated](./media/image42.png)
+      ![](./media/image42.png)
 
 11. Then, in the **Update your password** window, update **sample
     User2’s** password and click on the **Sign in** button.
     
-    ![A screenshot of a login box Description automatically
-    generated](./media/image43.png)
-
-> ![](./media/image43.png)
+      ![](./media/image43.png)
+    
+      ![](./media/image43.png)
 
 12. In the **Power BI Home** page menu bar on the left,
-    select **Workspaces** and select **Warehouse\_FabricXX**.
+    select **Workspaces** and select **Warehouse_FabricXX**.
 
-> ![](./media/image44.png)
+      ![](./media/image44.png)
 
-13. In the **Warehouse\_FabricXX** page, select **datawarehouse**
+13. In the **Warehouse_FabricXX** page, select **datawarehouse**
 
-![](./media/image45.png)
+    ![](./media/image45.png)
 
 14. Click on ***New SQL query*** dropdown in the command bar, then
     select **New SQL query** under **Blank** section. We'll start
     building our schema in the next step:
 
-![](./media/image46.png)
+     ![](./media/image46.png)
 
-6.  Connect as the test user again and run the following T-SQL
+15.  Connect as the test user again and run the following T-SQL
     statement. Click on the **Run** button to execute the query. After
     the query is executed, you will see the results.
 
-> codeCopy
-> 
-> SELECT \* FROM dbo.Customers;
-
-![](./media/image47.png)
+    +++SELECT * FROM dbo.Customers;+++
+  ![](./media/image47.png)
 
 The data is returned unmasked because the test user has been granted
 the UNMASK permission.
@@ -395,63 +337,46 @@ predicate defined as an inline table-valued function.
     Query** dropdown. Under the header **Blank**, select **New SQL
     Query**.
 
-> ![](./media/image48.png)
+     ![](./media/image48.png)
 
 3.  Create a table and insert data into it. So that you can test
     row-level security in a later step,
     replace username1@your\_domain.com with a user name from your
     environment and replace username2@your\_domain.com with your user
     name.
-
-> codeCopy
-> 
-> CREATE TABLE dbo.Sales
-> 
-> (
-> 
-> OrderID INT,
-> 
-> SalesRep VARCHAR(60),
-> 
-> Product VARCHAR(10),
-> 
-> Quantity INT
-> 
-> );
-> 
-> \--Populate the table with 6 rows of data, showing 3 orders for each
-> test user.
-> 
-> INSERT dbo.Sales (OrderID, SalesRep, Product, Quantity) VALUES
-> 
-> (1, '\<username1\>@\<your\_domain\>.com', 'Valve', 5),
-> 
-> (2, '\<username1\>@\<your\_domain\>.com', 'Wheel', 2),
-> 
-> (3, '\<username1\>@\<your\_domain\>.com', 'Valve', 4),
-> 
-> (4, '\<username2\>@\<your\_domain\>.com', 'Bracket', 2),
-> 
-> (5, '\<username2\>@\<your\_domain\>.com', 'Wheel', 5),
-> 
-> (6, '\<username2\>@\<your\_domain\>.com', 'Seat', 5);
-> 
-> SELECT \* FROM dbo.Sales;
+      ```
+      CREATE TABLE dbo.Sales  
+      (  
+          OrderID INT,  
+          SalesRep VARCHAR(60),  
+          Product VARCHAR(10),  
+          Quantity INT  
+      );
+          
+      --Populate the table with 6 rows of data, showing 3 orders for each test user. 
+      INSERT dbo.Sales (OrderID, SalesRep, Product, Quantity) VALUES
+      (1, '<username1>@<your_domain>.com', 'Valve', 5),   
+      (2, '<username1>@<your_domain>.com', 'Wheel', 2),   
+      (3, '<username1>@<your_domain>.com', 'Valve', 4),  
+      (4, '<username2>@<your_domain>.com', 'Bracket', 2),   
+      (5, '<username2>@<your_domain>.com', 'Wheel', 5),   
+      (6, '<username2>@<your_domain>.com', 'Seat', 5);  
+          
+      SELECT * FROM dbo.Sales;  
+      ```
 
 4.  Use the **▷ Run** button to run the SQL script, which creates a new
     table named **Sales** in the **dbo** schema of the data warehouse.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image49.png)
-> 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image50.png)
+      ![](./media/image49.png)
+      
+      ![](./media/image50.png)
 
 5.  Then, in the **Explorer** pane,
-    expand **Schemas** \> **dbo** \> **Tables** and verify that
+    expand **Schemas** > **dbo** > **Tables** and verify that
     the **Sales** table has been created.
 
-> ![](./media/image51.png)
+      ![](./media/image51.png)
 
 6.  Create a new schema, a security predicate defined as a function, and
     a security policy.
@@ -459,127 +384,92 @@ predicate defined as an inline table-valued function.
 7.  In the query editor, copy and paste the following code. Click on
     the **Run** button to execute the query. After the query is
     executed, you will see the results.
-
-> codeCopy
-> 
-> \--Create a separate schema to hold the row-level security objects
-> (the predicate function and the security policy)
-> 
-> CREATE SCHEMA rls;
-> 
-> GO
-> 
-> /\*Create the security predicate defined as an inline table-valued
-> function.
-> 
-> A predicate evaluates to true (1) or false (0). This security
-> predicate returns 1,
-> 
-> meaning a row is accessible, when a row in the SalesRep column is the
-> same as the user
-> 
-> executing the query.\*/
-> 
-> \--Create a function to evaluate who is querying the table
-> 
-> CREATE FUNCTION rls.fn\_securitypredicate(@SalesRep AS VARCHAR(60))
-> 
-> RETURNS TABLE
-> 
-> WITH SCHEMABINDING
-> 
-> AS
-> 
-> RETURN SELECT 1 AS fn\_securitypredicate\_result
-> 
-> WHERE @SalesRep = USER\_NAME();
-> 
-> GO
-> 
-> /\*Create a security policy to invoke and enforce the function each
-> time a query is run on the Sales table.
-> 
-> The security policy has a filter predicate that silently filters the
-> rows available to
-> 
-> read operations (SELECT, UPDATE, and DELETE). \*/
-> 
-> CREATE SECURITY POLICY SalesFilter
-> 
-> ADD FILTER PREDICATE rls.fn\_securitypredicate(SalesRep)
-> 
-> ON dbo.Sales
-> 
-> WITH (STATE = ON);
-> 
-> GO
-> 
-> ![](./media/image52.png)
+      ```
+      --Create a separate schema to hold the row-level security objects (the predicate function and the security policy)
+      CREATE SCHEMA rls;
+      GO
+         
+      /*Create the security predicate defined as an inline table-valued function.
+      A predicate evaluates to true (1) or false (0). This security predicate returns 1,
+      meaning a row is accessible, when a row in the SalesRep column is the same as the user
+      executing the query.*/   
+      --Create a function to evaluate who is querying the table
+      CREATE FUNCTION rls.fn_securitypredicate(@SalesRep AS VARCHAR(60)) 
+          RETURNS TABLE  
+      WITH SCHEMABINDING  
+      AS  
+          RETURN SELECT 1 AS fn_securitypredicate_result   
+      WHERE @SalesRep = USER_NAME();
+      GO   
+      /*Create a security policy to invoke and enforce the function each time a query is run on the Sales table.
+      The security policy has a filter predicate that silently filters the rows available to 
+      read operations (SELECT, UPDATE, and DELETE). */
+      CREATE SECURITY POLICY SalesFilter  
+      ADD FILTER PREDICATE rls.fn_securitypredicate(SalesRep)   
+      ON dbo.Sales  
+      WITH (STATE = ON);
+      GO
+      ```
+     ![](./media/image52.png)
 
 8.  Then, in the **Explorer** pane,
-    expand **Schemas** \> **rls** \> **Functions**, and verify that
+    expand **Schemas** > **rls** > **Functions**, and verify that
     the function has been created.
 
-> ![](./media/image53.png)
+      ![](./media/image53.png)
 
 9.  Open your browser, navigate to the address bar, and type or paste
     the following URL: **https://app.fabric.microsoft.com/** then press
     the **Enter** button.
 
-> ![A search engine window with a red box Description automatically
-> generated with medium confidence](./media/image15.png)
+       ![](./media/image15.png)
 
 10. In the **Microsoft Fabric** window, enter **sample User1**
     credentials(which you have saved in Task 1), and click on the
     **Submit** button.
 
-> ![](./media/image54.png)
+     ![](./media/image54.png)
 
 11. Then, In the **Microsoft** window enter the **sample User1**
     password and click on the **Sign in** button**.**
 
-> ![](./media/image55.png)
+     ![](./media/image55.png)
 
 12. Then, in the **Update your password** window, update **sample
     User1’s** password and click on the **Sign in** button.
 
-> ![](./media/image56.png)
+     ![](./media/image56.png)
 
 13. In the **Power BI Home** page menu bar on the left,
     select **Workspaces** and select **Warehouse\_FabricXX**.
 
-> ![](./media/image57.png)
+     ![](./media/image57.png)
 
 14. In the **Warehouse\_FabricXX** page, select **datawarehouse**
 
-> ![](./media/image58.png)
+     ![](./media/image58.png)
 
 15. Click on ***New SQL query*** dropdown in the command bar, then
     select **New SQL query** under **Blank** section. We'll start
     building our schema in the next step:
 
-> ![](./media/image59.png)
+     ![](./media/image59.png)
 
 16. Log in to Fabric as the user you
-    replaced \<username1\>@\<your\_domain\>.com with, in the Sales
+    replaced <username1>@<your_domain>.com with, in the Sales
     table INSERTstatement. Confirm that you’re logged in as that user by
     running the following T-SQL.
 
-> codeCopy
-> 
-> SELECT USER\_NAME();
+      +++SELECT USER_NAME();+++
 
-![](./media/image60.png)
+    ![](./media/image60.png)
 
 10. Query the **Sales** table to confirm that row-level security works
     as expected. You should only see data that meets the conditions in
     the security predicate defined for the user you’re logged in as.
 
-> codeCopy
-> 
-> SELECT \* FROM dbo.Sales;
-
-![](./media/image61.png)
+    +++SELECT * FROM dbo.Sales;+++
+    ![](./media/image61.png)
 
 ## Task 7: Implement column-level security
 
@@ -598,41 +488,28 @@ by a user other than yourself.
     the **New SQL Query** dropdown. Under the header **Blank**,
     select **New SQL Query**.
 
-> ![](./media/image62.png)
+      ![](./media/image62.png)
 
 3.  Create a table and insert data into the table. In the query editor,
     copy and paste the following code. Click on the **Run** button to
     execute the query. After the query is executed, you will see the
     results.
-
-> codeCopy
-> 
-> CREATE TABLE dbo.Orders
-> 
-> (
-> 
-> OrderID INT,
-> 
-> CustomerID INT,
-> 
-> CreditCard VARCHAR(20)
-> 
-> );
-> 
-> INSERT dbo.Orders (OrderID, CustomerID, CreditCard) VALUES
-> 
-> (1234, 5678, '111111111111111'),
-> 
-> (2341, 6785, '222222222222222'),
-> 
-> (3412, 7856, '333333333333333');
-> 
-> SELECT \* FROM dbo.Orders;
-
-![](./media/image63.png)
-
-![A screenshot of a computer Description automatically
-generated](./media/image64.png)
+      ```
+      CREATE TABLE dbo.Orders
+      (   
+          OrderID INT,   
+          CustomerID INT,  
+          CreditCard VARCHAR(20)      
+      );   
+      INSERT dbo.Orders (OrderID, CustomerID, CreditCard) VALUES
+      (1234, 5678, '111111111111111'),
+      (2341, 6785, '222222222222222'),
+      (3412, 7856, '333333333333333');   
+      SELECT * FROM dbo.Orders;
+      ```
+      ![](./media/image63.png)
+      
+      ![](./media/image64.png)
 
 4.  Deny permission to view a column in the table. The T-SQL statement
     prevents \<username\>@\<your\_domain\>.com from seeing the
@@ -642,12 +519,8 @@ generated](./media/image64.png)
 
 5.  Click on the **Run** button to execute the query
 
-> codeCopy
-> 
-> DENY SELECT ON dbo.Orders (CreditCard) TO
-> \[\<username\>@\<your\_domain\>.com\];
-> 
-> ![](./media/image65.png)
+     +++DENY SELECT ON dbo.Orders (CreditCard) TO [<username>@<your_domain>.com];+++
+     ![](./media/image65.png)
 
 6.  Test column-level security by logging in to Fabric as the user you
     denied select permissions to.
@@ -662,14 +535,12 @@ generated](./media/image64.png)
     the **Run** button to execute the query. After the query is
     executed, you will see the results.
 
-> codeCopy
-> 
-> SELECT \* FROM dbo.Orders;
+    +++SELECT * FROM dbo.Orders;+++
 
-![](./media/image66.png)
+    ![](./media/image66.png)
 
-You’ll receive an **error** because access to the CreditCard column has
-been restricted.
+    You’ll receive an **error** because access to the CreditCard column has
+    been restricted.
 
 10. Try selecting only the OrderID and CustomerID fields and the query
     will succeed.
@@ -678,11 +549,9 @@ been restricted.
     the **Run** button to execute the query. After the query is
     executed, you will see the results.
 
-> codeCopy
-> 
-> SELECT OrderID, CustomerID from dbo.Orders
+    +++SELECT OrderID, CustomerID from dbo.Orders+++
 
-![](./media/image67.png)
+    ![](./media/image67.png)
 
 ## Task 8: Configure SQL granular permissions using T-SQL
 
@@ -700,7 +569,7 @@ the effect of applying granular permissions.
     the **New SQL Query** dropdown. Under the header **Blank**,
     select **New SQL Query**.
 
-> ![](./media/image68.png)
+      ![](./media/image68.png)
 
 3.  Create a stored procedure and a table. Then execute the procedure
     and query the table.
@@ -708,88 +577,64 @@ the effect of applying granular permissions.
 4.  In the query editor, copy and paste the following code. Click on
     the **Run** button to execute the query. After the query is
     executed, you will see the results.
+      ```
+      CREATE PROCEDURE dbo.sp_PrintMessage
+      AS
+      PRINT 'Hello World.';
+      GO   
+      CREATE TABLE dbo.Parts
+      (
+          PartID INT,
+          PartName VARCHAR(25)
+      );
+         
+      INSERT dbo.Parts (PartID, PartName) VALUES
+      (1234, 'Wheel'),
+      (5678, 'Seat');
+       GO
+         
+      /*Execute the stored procedure and select from the table and note the results you get
+      as a member of the Workspace Admin role. Look for output from the stored procedure on 
+      the 'Messages' tab.*/
+      EXEC dbo.sp_PrintMessage;
+      GO   
+      SELECT * FROM dbo.Parts
+      ```
 
-> codeCopy
-> 
-> CREATE PROCEDURE dbo.sp\_PrintMessage
-> 
-> AS
-> 
-> PRINT 'Hello World.';
-> 
-> GO
-> 
-> CREATE TABLE dbo.Parts
-> 
-> (
-> 
-> PartID INT,
-> 
-> PartName VARCHAR(25)
-> 
-> );
-> 
-> INSERT dbo.Parts (PartID, PartName) VALUES
-> 
-> (1234, 'Wheel'),
-> 
-> (5678, 'Seat');
-> 
-> GO
-> 
-> /\*Execute the stored procedure and select from the table and note the
-> results you get
-> 
-> as a member of the Workspace Admin role. Look for output from the
-> stored procedure on
-> 
-> the 'Messages' tab.\*/
-> 
-> EXEC dbo.sp\_PrintMessage;
-> 
-> GO
-> 
-> SELECT \* FROM dbo.Parts
+      ![](./media/image69.png)
 
-![](./media/image69.png)
-
-![A screenshot of a computer Description automatically
-generated](./media/image70.png)
+      ![](./media/image70.png)
 
 5.  Next DENY SELECT permissions on the table to a user who is a member
     of the **Workspace Viewer** role and GRANT EXECUTE on the procedure
     to the same user. Replace \<username\>@\<your\_domain\>.com with a
     user name from your environment that is a member of the **Workspace
     Viewer** role.
+    ```
+    DENY SELECT on dbo.Parts to [<username>@<your_domain>.com];
+    
+    GRANT EXECUTE on dbo.sp_PrintMessage to [<username>@<your_domain>.com];
+    ```
 
-> codeCopy
-> 
-> DENY SELECT on dbo.Parts to \[\<username\>@\<your\_domain\>.com\];
-> 
-> GRANT EXECUTE on dbo.sp\_PrintMessage to
-> \[\<username\>@\<your\_domain\>.com\];
-
-![](./media/image71.png)
+      ![](./media/image71.png)
 
 6.  Return to the **sample user2** credentials browser.
 
 7.  Sign in to Fabric as the user you specified in
     the **DENY** and **GRANT** statements in place
-    of \<username\>@\<your\_domain\>.com. Then test the granular
+    of <username>@<your_domain>.com. Then test the granular
     permissions you applied by executing the stored procedure and
     querying the table.
+      ```
+      EXEC dbo.sp_PrintMessage;
+      GO
+         
+      SELECT * FROM dbo.Parts;
+      ```
 
-> codeCopy
-> 
-> EXEC dbo.sp\_PrintMessage;
-> 
-> GO
-> 
-> SELECT \* FROM dbo.Parts;
-
-![](./media/image72.png)
-
-![](./media/image73.png)
+    ![](./media/image72.png)
+    
+    ![](./media/image73.png)
 
 ## Task 9: Clean up resources
 
@@ -800,15 +645,15 @@ and, configured SQL granular permissions using T-SQL.
 1.  In the left navigation bar, select the icon for your workspace to
     view all of the items it contains.
 
-> ![](./media/image74.png)
+      ![](./media/image74.png)
 
 2.  In the menu on the top toolbar, select **Workspace settings**.
 
-![](./media/image75.png)
+    ![](./media/image75.png)
 
 3.  In the **General** section, select **Remove this workspace**.
 
-![](./media/image76.png)
+    ![](./media/image76.png)
 
 **Summary**
 

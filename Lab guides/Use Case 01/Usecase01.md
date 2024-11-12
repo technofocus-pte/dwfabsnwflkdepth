@@ -245,16 +245,19 @@ trial enabled.
     configure the following settings and click on the **Create** button.
 
       •	In the Account name or URL, enter +++https://fabrictutorialdata.blob.core.windows.net/sampledata/+++
+    
       •	In the Connection credentials section, click on the dropdown under Connection, then select Create new connection.
+    
       •	In Connection name field, enter +++Wide World Importers Public Sample+++.
+    
       •	Set the Authentication kind to **Anonymous**.
          ![](./media/image31.png)
 
-12. Change the remaining settings on the **Source** page of the copy
+13. Change the remaining settings on the **Source** page of the copy
     activity as follows to reach the .parquet files in   
     https://fabrictutorialdata.blob.core.windows.net/sampledata/WideWorldImportersDW/parquet/full/dimension_customer/*.parquet
 
-13. In the **File path** text boxes, provide:
+14. In the **File path** text boxes, provide:
 
       •	Container: **sampledata**
       •	File path - Directory: **WideWorldImportersDW/tables**
@@ -263,14 +266,14 @@ trial enabled.
          then select it)
        ![](./media/image32.png)
 
-14. Click on **Preview data** on the right side of **File path** setting
+15. Click on **Preview data** on the right side of **File path** setting
     to ensure that there are no errors and then click on **close.**
 
     ![](./media/image33.png)
 
     ![](./media/image34.png)
 
-15. On the **Destination** tab, enter the following settings.
+16. On the **Destination** tab, enter the following settings.
 
     |     |    |
     |-------|------|
@@ -281,11 +284,11 @@ trial enabled.
 
      ![](./media/image35.png)
 
-16. From the ribbon, select **Run**.
+17. From the ribbon, select **Run**.
 
       ![](./media/image36.png)
 
-17. In the **Save and run?** dialog box, click on **Save and run**
+18. In the **Save and run?** dialog box, click on **Save and run**
     button.
 
      ![](./media/image37.png)
@@ -293,7 +296,7 @@ trial enabled.
 
       ![](./media/image39.png)
 
-18. Monitor the copy activity's progress on the **Output** page and wait
+19. Monitor the copy activity's progress on the **Output** page and wait
     for it to complete.
 
      ![](./media/image40.png)

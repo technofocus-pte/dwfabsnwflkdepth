@@ -100,13 +100,13 @@ Now that you have a workspace, it’s time to create a data warehouse.
     selected.
 
 2.  On the **Home** page, select **Sample warehouse** and create a new
-    data warehouse named +++**sample-dw+++**.
+    data warehouse named +++sample-dw+++.
 
-> ![](./media/image13.png)
-> 
-> ![](./media/image14.png)
-> 
-> ![](./media/image15.png)
+     ![](./media/image13.png)
+ 
+     ![](./media/image14.png)
+  
+     ![](./media/image15.png)
 
 3.  After a minute or so, a new warehouse will be created and populated
     with sample data for a taxi ride analysis scenario.

@@ -138,8 +138,7 @@ Azure Pass, another Azure Pass will not be issued.
 
 4.  Crosscheck the Email ID and then click on the **Confirm Microsoft
     Account**.
-
-      ![](./media/image4.png)
+    ![](./media/image4.png)
 
 5.  Click on the **Resources** tab and copy the **Promo Code**. Navigate
     to **Enter Promo code** box and paste the Promo Code that have you
@@ -213,7 +212,6 @@ reports.
     |Name	|+++RealTimeWorkspaceXXX+++ (XXX can be a unique number, you can add more numbers)|
     |Advanced|	Select Trail|
     |Default storage format|	Small dataset storage format|
-
 
      ![](./media/image16.png)
      

@@ -179,29 +179,27 @@ warehouse instance.
 9.  **Run** the modified query and view the results, which show details
     of all running queries in the database (including this one).
 
-![](./media/image22.png)
+    ![](./media/image22.png)
 
 10. In the **New SQL query** drop-down list, select **New SQL query** to
     add a second query tab.
 
-> ![](./media/image23.png)
+      ![](./media/image23.png)
 
 11. In the new empty query tab, run the following code:
-
-> sqlCopy
-> 
-> WHILE 1 = 1
-> 
-> SELECT \* FROM Trip;
-
-![](./media/image24.png)
+    ```
+    WHILE 1 = 1
+        SELECT * FROM Trip;
+    
+    ```
+    ![](./media/image24.png)
 
 12. Leave the query running, and return to the tab containing the code
     to query the DMVs and re-run it. This time, the results should
     include the second query that is running in the other tab. Note the
     elapsed time for that query.
 
-> ![](./media/image25.png)
+      ![](./media/image25.png)
 
 13. Wait a few seconds and re-run the code to query the DMVs again. The
     elapsed time for the query in the other tab should have increased.
@@ -209,12 +207,12 @@ warehouse instance.
 14. Return to the second query tab where the query is still running and
     select **X Cancel** to cancel it.
 
-> ![](./media/image26.png)
+      ![](./media/image26.png)
 
 15. Back on the tab with the code to query the DMVs, re-run the query to
     confirm that the second query is no longer running.
 
-> ![](./media/image27.png)
+    ![](./media/image27.png)
 
 16. Close all query tabs.
 
@@ -227,43 +225,38 @@ data warehouse.
 1.  In the **sample-dw** data warehouse page, in the **New SQL
     query** drop-down list, select **New SQL query**.
 
-> ![](./media/image23.png)
+      ![](./media/image23.png)
 
 2.  In the new blank query pane, enter the following Transact-SQL code
-    to query the **exec\_requests\_history** view:
+    to query the **exec_requests_history** view:
 
 3.  Use the **▷ Run** button to run the SQL script and view the results,
     which include details of previously executed queries.
 
-> sqlCopy
-> 
-> SELECT \* FROM queryinsights.exec\_requests\_history;
+     +++SELECT * FROM queryinsights.exec_requests_history;+++
 
-![](./media/image28.png)
+    ![](./media/image28.png)
 
 4.  Modify the SQL code to query the **frequently\_run\_queries** view,
     like this:
 
-> sqlCopy
-> 
-> SELECT \* FROM queryinsights.frequently\_run\_queries;
+ 
+    +++SELECT * FROM queryinsights.frequently_run_queries;+++
 
 5.  Run the modified query and view the results, which show details of
     frequently run queries
 
-![](./media/image29.png)
+    ![](./media/image29.png)
 
 6.  Modify the SQL code to query the **long\_running\_queries** view,
     like this:
 
-> sqlCopy
-> 
-> SELECT \* FROM queryinsights.long\_running\_queries;
+    +++SELECT * FROM queryinsights.long_running_queries;+++
 
 7.  Run the modified query and view the results, which show details of
     all queries and their durations.
 
-![](./media/image30.png)
+    ![](./media/image30.png)
 
 ## Task 5:Clean up resources
 
@@ -276,17 +269,17 @@ workspace you created for this exercise.
 1.  In the bar on the left, select the icon for your workspace to view
     all of the items it contains.
 
-> ![](./media/image31.png)
+      ![](./media/image31.png)
 
 2.  In the **…** menu on the toolbar, select **Workspace settings**.
 
-![](./media/image32.png)
+    ![](./media/image32.png)
 
 3.  In the **General** section, select **Remove this workspace**.
 
-![](./media/image33.png)
-
-![](./media/image34.png)
+    ![](./media/image33.png)
+    
+    ![](./media/image34.png)
 
 **Summary:**
 

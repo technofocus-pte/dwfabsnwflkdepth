@@ -539,7 +539,7 @@ syntax.
 
 3.In the **query editor**, remove the existing code and paste the following to create clones of the **dbo.dimension_city ** and **dbo.fact_sale** tables in the dbo1 schema.  
 
-       **SQLCopy**
+      
        ```
       --Create a clone of the dbo.dimension_city table in the dbo1 schema.
       CREATE TABLE [dbo1].[dimension_city1] AS CLONE OF [dbo].[dimension_city];
@@ -814,7 +814,7 @@ Learn how to create and save a new stored procedure to transform
     for **SaleKey** 22632918. Select **Run** to execute the query.
     
     SQLCopy
-    
+    ```
     /\*View of Top10 Customers as of today before record updates\*/
     
     SELECT \*
@@ -822,7 +822,7 @@ Learn how to create and save a new stored procedure to transform
     FROM \[WideWorldImporters\].\[dbo\].\[Top10CustomersView\]
     
     OPTION (FOR TIMESTAMP AS OF '2024-04-24T20:49:06.097');
-    
+    ```
     ![](./media/image91.png)
 
 # Exercise 7: Create a query with the visual query builder
@@ -872,16 +872,20 @@ Fabric portal.
 7.  On the **Merge** settings page enter the following details.
 
     a)	In the **Left table for merge** dropdown, choose **dimension_city**
+    
     b)	In the **Right table for merge** dropdown, choose **fact_sale** (use horizontal and vertical scroll bar)
+    
     c)	Select the **CityKey** field in the **dimension_city** table by selecting on the column name in the header row to indicate the join column.
+    
     d)	Select the **CityKey** field in the fact_sale table by selecting on the column name in the header row to indicate the join column.
+    
     e)	In the **Join kind** diagram selection, choose Inner and click on the **Ok** button.
 
       ![](./media/image101.png)
       
       ![](./media/image102.png)
 
-8.  With the **Merge** step selected, select the **Expand** button
+9.  With the **Merge** step selected, select the **Expand** button
     beside **fact_sale** on the header of the data grid as shown in the
     below image, then select the columns **TaxAmount, Profit,
     TotalIncludingTax** and select **Ok.**
@@ -890,24 +894,26 @@ Fabric portal.
       
       ![](./media/image104.png)
 
-9.  In the **transformations ribbon,** click on the dropdown beside
+10.  In the **transformations ribbon,** click on the dropdown beside
     **Transform**, then select **Group by**.
 
       ![](./media/image105.png)
 
-10. On the **Group by** settings page, enter the following details.
+11. On the **Group by** settings page, enter the following details.
 
-   a)	Select **Advanced** radio button.
-   b)	Under **Group by** select the following: 
-    i.	**Country**
-    ii.	**StateProvince**
-    iii.	**City**
-    c)	In the **New column name**, enter **SumOfTaxAmount** In **Operation** colum field, select **Sum**, then under Column field, select **TaxAmount**. Click on **Add aggregation** to add more aggregate column and operation.
-    d)	In the **New column name**, enter **SumOfProfit** In **Operation** colum field, select **Sum**, then under Column field, select **Profit**. Click on **Add aggregation** to add more aggregate column and operation.
-    e)	In the **New column name**, enter **SumOfTotalIncludingTax** In **Operation** colum field, select **Sum**, then under Column field, **TotalIncludingTax**. 
-    f)	Click on the **OK** button	
-      ![](./media/image106.png)
-      ![](./media/image107.png)
+     a)	Select **Advanced** radio button.
+     b)	Under **Group by** select the following: 
+      i.	**Country**
+      ii.	**StateProvince**
+      iii.	**City**
+     c)	In the **New column name**, enter **SumOfTaxAmount** In **Operation** colum field, select **Sum**, then under Column field, select **TaxAmount**. Click on **Add aggregation** to add more aggregate column and operation.
+      
+      d) In the **New column name** , enter **SumOfProfit** In **Operation** colum field, select **Sum**, then under Column field, select **Profit**. Click on **Add aggregation** to add more aggregate column and operation.
+      
+      e)	In the **New column name**, enter **SumOfTotalIncludingTax** In **Operation** colum field, select **Sum**, then under Column field, **TotalIncludingTax**. 
+      f)	Click on the **OK** button	
+        ![](./media/image106.png)
+        ![](./media/image107.png)
 
 11. In the explorer, navigate to **Queries** and right-click on **Visual
     query 1** under **Queries**. Then, select **Rename**.
@@ -1083,52 +1089,7 @@ the database.schema.table, as in SQL Server.
 
 # Exercise 10: Create Power BI reports
 
-## Task 1: Enable azure maps visuals sign in
-
-1.  Open your browser, navigate to the address bar, and type or paste
-    the following URL: <https://app.fabric.microsoft.com/home> then
-    press the **Enter** button. In Microsoft Fabric page, click on
-    **Power BI**.
-    
-    ![](./media/image133.png)
-
-2.  On right side of Power BI home page, click on the **Settings** icon.
-
-    ![](./media/image134.png)
-
-In case, you did not see the **Settings** icon, then click on the
-horizontal ellipsis on the top right side of the page, then navigate and
-click on **Settings** as shown in the below image.
-
-    ![](./media/image135.png)
-
-3.  In **Settings** pane, scroll down to **Governance and insights**,
-    then click on **Admin portal** .
-
-    ![](./media/image136.png)
-
-4.  In **Admin portal** pane, select **Tenant settings**, scroll down to
-    **Integration settings** section, click on **Use Azure Maps
-    visual**, then enable it using the **toggle** button. After **Use
-    Azure Maps visual** were Enabled, click on the **Apply** button.
-
-    ![](./media/image137.png)
-    
-    ![](./media/image138.png)
-
-5.  You will see a notification stating - **Applying changes.** It will
-    take approximately 15 minutes for implemting the tenant settings.
-    
-      ![](./media/image139.png)
-
-6.  In **Admin portal** pane, select **Tenant settings**, scroll down to
-    **Integration settings** section, click on **Map and filled map
-    visuals**, then enable it using the **toggle** button. After **Use
-    Azure Maps visual** were Enabled, click on the **Apply** button.
-
-    ![](./media/image140.png)
-
-## Task 2: Create Power BI reports
+## Task 1: Create Power BI reports
 
 In this task we learn how to create and save several types of Power BI
 reports.
@@ -1197,72 +1158,44 @@ reports.
 6.  Select anywhere on the blank canvas (or press the Esc key) so the
     column chart visual is no longer selected.
 
-7.  Build a **Maps** visual,On the **Visualizations** pane, select
-    the **Azure Maps for Power BI** visual.
-
-     ![](./media/image150.png)
-
-8.  From the **Data** pane, drag **StateProvince** from
-    the **dimension_city** table to the **Location** bucket on
-    the **Visualizations** pane.
-
-     ![](./media/image151.png)
-
-9.  From the **Data** pane, drag **Profit** from
-    the **fact_sale** table to the **Size** bucket on
-    the **Visualizations** pane.
-
-    ![](./media/image152.png)
-
-10. If necessary, reposition and resize the map to take up the bottom
-    left quarter of the canvas by dragging the anchor points on the
-    corners of the visual.
-
-    ![](./media/image153.png)
-
-    ![](./media/image154.png)
-
-11. Select anywhere on the blank canvas (or press the Esc key) so the
-    map visual is no longer selected.
-
-12. Build a **Table** visual on the **Visualizations** pane, select
+7. Build a **Table** visual on the **Visualizations** pane, select
     the **Table** visual.
 
      ![](./media/image155.png)
 
-13. From the **Data** pane, check the box next to **SalesTerritory** on
+8. From the **Data** pane, check the box next to **SalesTerritory** on
     the **dimension_city** table.
 
-14. From the **Data** pane, check the box next to **StateProvince** on
+9. From the **Data** pane, check the box next to **StateProvince** on
     the **dimension_city** table.
 
      ![](./media/image156.png)
 
-15. From the **Data** pane, check the box next to **Profit** on
+10. From the **Data** pane, check the box next to **Profit** on
     the **fact_sale** table.
 
-16. From the **Data** pane, check the box next
+11. From the **Data** pane, check the box next
     to **TotalExcludingTax** on the **fact_sale** table.
 
     ![](./media/image157.png)
 
-17. Reposition and resize the column chart to take up the right half of
+12. Reposition and resize the column chart to take up the right half of
     the canvas by dragging the anchor points on the corners of the
     visual.
 
     ![](./media/image158.png)
 
-18. In the Synapse Data Engineering Warehouse_FabricXX page, from the
+13. In the Synapse Data Engineering Warehouse_FabricXX page, from the
     ribbon, select **File** and select the **Save**.
 
       ![](./media/image159.png)
 
-19. In the Save your report dialog box, enter **+++Sales Analysis+++**
+14. In the Save your report dialog box, enter **+++Sales Analysis+++**
     as the name of your report and click on the **Save** button.
 
       ![](./media/image160.png)
 
-20. You will see a notification stating **Report saved.**
+15. You will see a notification stating **Report saved.**
 
     ![](./media/image161.png)
 

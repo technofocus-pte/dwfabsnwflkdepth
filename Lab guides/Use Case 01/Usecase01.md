@@ -76,7 +76,7 @@ items.
 ## **Task 1: Sign in to Power BI account and sign up for the free [Microsoft Fabric trial](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)**
 
 1. Open your browser, navigate to the address bar, and type or paste
-    the following URL: https://app.fabric.microsoft.com/ then press the
+    the following URL: +++https://app.fabric.microsoft.com/+++ then press the
     **Enter** button.
 
      ![](./media/image1.png)
@@ -149,7 +149,7 @@ trial enabled.
 
     |     |    |
     |-------|------|
-    |Name	| Warehouse_FabricXX (XX can be a unique number) (here, we entered Warehouse_Fabric29)|
+    |Name	| +++Warehouse_FabricXX+++ (XX can be a unique number) (here, we entered Warehouse_Fabric29)|
     |Description|	This workspace contains all the artifacts for the data warehouse|
     |Advanced|	Under License mode, select Trial|
     |Default| storage format	Small dataset storage format|
@@ -178,8 +178,7 @@ trial enabled.
 
      ![](./media/image18.png)
 
-2.  On the **New warehouse** dialog,
-    enter +++WideWorldImporters+++ and click on the **Create**
+2.  On the **New warehouse** dialog,enter +++WideWorldImporters+++ and click on the **Create**
     button.
 
      ![](./media/image19.png)
@@ -198,12 +197,12 @@ trial enabled.
     return to the workspace item list.
       ![](./media/image21.png)
           
-2.  In the **Warehouse\_FabricXX** page, select +**New item**. Then,
+2.  In the **Warehouse\_FabricXX** page, select **+New item**. Then,
     click Data pipeline to view the full list of available items under
     Get data.
      ![](./media/image23.png)
 
-3.  On the **New** **pipeline** dialog box, in the **Name** field, enter
+3.  On the **New pipeline** dialog box, in the **Name** field, enter
     +++Load Customer Data+++ and click on the **Create** button.
     
       ![](./media/image24.png)
@@ -218,15 +217,14 @@ trial enabled.
 
     ![](./media/image26.png)
 
-7.  Select the newly created **Copy data** **1** activity from the
+7.  Select the newly created **Copy data 1** activity from the
     design canvas to configure it.
     **Note**: Drag the horizonal line in the design canvas to have a
      complete view of various features.
     
       ![](./media/image27.png)
 
-8.  On the **General** tab, in the **Name** field, enter +++CD
-    Load dimension_customer+++ .
+8.  On the **General** tab, in the **Name** field, enter +++CD Load dimension_customer+++ .
 
      ![](./media/image28.png)
 
@@ -244,13 +242,14 @@ trial enabled.
 11. On the **Connection settings** pane that appears on the right side,
     configure the following settings and click on the **Create** button.
 
-      •	In the Account name or URL, enter +++https://fabrictutorialdata.blob.core.windows.net/sampledata/+++
+      a)	In the Account name or URL, enter +++https://fabrictutorialdata.blob.core.windows.net/sampledata/+++
+
     
-      •	In the Connection credentials section, click on the dropdown under Connection, then select Create new connection.
+      b)	In the Connection credentials section, click on the dropdown under Connection, then select Create new connection.
     
-      •	In Connection name field, enter +++Wide World Importers Public Sample+++.
+      c)	In Connection name field, enter +++Wide World Importers Public Sample+++.
     
-      •	Set the Authentication kind to **Anonymous**.
+      d)  Set the Authentication kind to **Anonymous**.
          ![](./media/image31.png)
 
 13. Change the remaining settings on the **Source** page of the copy
@@ -259,10 +258,10 @@ trial enabled.
 
 14. In the **File path** text boxes, provide:
 
-      •	Container: **sampledata**
-      •	File path - Directory: **WideWorldImportersDW/tables**
-      •	 File path - File name: **dimension_customer.parquet**
-      •	In the File format drop down, choose Parquet (if you are unable to see Parquet, then type in the search box and 
+      a)	Container: **+++sampledata+++**
+      b)	File path - Directory: **+++WideWorldImportersDW/tables+++**
+      c)	 File path - File name: **+++dimension_customer.parquet+++**
+      d)	In the File format drop down, choose Parquet (if you are unable to see Parquet, then type in the search box and 
          then select it)
        ![](./media/image32.png)
 
@@ -277,10 +276,10 @@ trial enabled.
 
     |     |    |
     |-------|------|
-    |Connection| WideWorldImporters|
+    |Connection| +++WideWorldImporters+++|
     |Table option|	select the Auto create table radio button.|
     |Data Warehouse|	drop down, select WideWorldImporters from the list|
-    |Table|	•	In the first box enter dbo                                                                                     •	In the second box enter dimension_customer|
+    |Table|	•	In the first box enter +++dbo+++                                                                                    •	In the second box enter +++dimension_customer+++|
 
      ![](./media/image35.png)
 
@@ -317,8 +316,9 @@ trial enabled.
 
       ![](./media/image42.png)
 
-3.  On the **WideWorldImporters** page, go to the **Home **tab, select **SQL** from the drop
-    down, and click on **New SQL query**.![](./media/image43.png)
+3.  On the **WideWorldImporters** page, go to the **Home** tab, select **SQL** from the drop
+    down, and click on **New SQL query**.
+    ![](./media/image43.png)
 
 4.  In the query editor, paste the following code and select **Run** to
     execute the query
@@ -387,23 +387,23 @@ trial enabled.
   
       ![](./media/image45.png)
 
-5.  To save this query, right-click on the **SQL query 1** tab just
+6.  To save this query, right-click on the **SQL query 1** tab just
     above the editor and select **Rename**.
 
       ![](./media/image46.png)
 
-6.  In the **Rename** dialog box, under **Name** field, enter
+7.  In the **Rename** dialog box, under **Name** field, enter
     **+++Create Tables+++** to change the name of **SQL query 1**. Then,
     click on the **Rename** button.
 
      ![](./media/image47.png)
 
-7.  Validate the table was created successfully by selecting the
+8.  Validate the table was created successfully by selecting the
     **refresh icon** button on the ribbon.
 
      ![](./media/image48.png)
 
-8.  In the **Explorer** pane, you’ll see the **fact_sale** table
+9.  In the **Explorer** pane, you’ll see the **fact_sale** table
     and **dimension_city** table.
 
      ![](./media/image49.png)
@@ -849,7 +849,7 @@ Fabric portal.
 
     ![](./media/image95.png)
 
-4.  In the **Keep top rows** dialog box, enter **10000** and
+4.  In the **Keep top rows** dialog box, enter **+++10000+++** and
     Select **OK**.
 
      ![](./media/image96.png)
@@ -871,11 +871,11 @@ Fabric portal.
 
 7.  On the **Merge** settings page enter the following details.
 
-    •	In the **Left table for merge** dropdown, choose **dimension_city**
-    •	In the **Right table for merge** dropdown, choose **fact_sale** (use horizontal and vertical scroll bar)
-    •	Select the **CityKey** field in the **dimension_city** table by selecting on the column name in the header row to indicate the join column.
-    •	Select the **CityKey** field in the fact_sale table by selecting on the column name in the header row to indicate the join column.
-    •	In the **Join kind** diagram selection, choose Inner and click on the **Ok** button.
+    a)	In the **Left table for merge** dropdown, choose **dimension_city**
+    b)	In the **Right table for merge** dropdown, choose **fact_sale** (use horizontal and vertical scroll bar)
+    c)	Select the **CityKey** field in the **dimension_city** table by selecting on the column name in the header row to indicate the join column.
+    d)	Select the **CityKey** field in the fact_sale table by selecting on the column name in the header row to indicate the join column.
+    e)	In the **Join kind** diagram selection, choose Inner and click on the **Ok** button.
 
       ![](./media/image101.png)
       
@@ -897,18 +897,16 @@ Fabric portal.
 
 10. On the **Group by** settings page, enter the following details.
 
-    •	Select **Advanced** radio button.
-    •	Under **Group by** select the following: 
+   a)	Select **Advanced** radio button.
+   b)	Under **Group by** select the following: 
     i.	**Country**
     ii.	**StateProvince**
     iii.	**City**
-    •	In the **New column name**, enter **SumOfTaxAmount** In **Operation** colum field, select **Sum**, then under Column field, select **TaxAmount**. Click on **Add aggregation** to add more aggregate column and operation.
-    •	In the **New column name**, enter **SumOfProfit** In **Operation** colum field, select **Sum**, then under Column field, select **Profit**. Click on **Add aggregation** to add more aggregate column and operation.
-    •	In the **New column name**, enter **SumOfTotalIncludingTax** In **Operation** colum field, select **Sum**, then under Column field, **TotalIncludingTax**. 
-    •	Click on the **OK** button	
-
+    c)	In the **New column name**, enter **SumOfTaxAmount** In **Operation** colum field, select **Sum**, then under Column field, select **TaxAmount**. Click on **Add aggregation** to add more aggregate column and operation.
+    d)	In the **New column name**, enter **SumOfProfit** In **Operation** colum field, select **Sum**, then under Column field, select **Profit**. Click on **Add aggregation** to add more aggregate column and operation.
+    e)	In the **New column name**, enter **SumOfTotalIncludingTax** In **Operation** colum field, select **Sum**, then under Column field, **TotalIncludingTax**. 
+    f)	Click on the **OK** button	
       ![](./media/image106.png)
-      
       ![](./media/image107.png)
 
 11. In the explorer, navigate to **Queries** and right-click on **Visual
@@ -949,7 +947,7 @@ Microsoft Fabric workspace:
      ![](./media/image112.png)
 
 3.  In the **Name** field, enter **+++ShortcutExercise+++** and click on
-    the **Create** button**.**
+    the **Create** button.
 
      ![](./media/image113.png)
 

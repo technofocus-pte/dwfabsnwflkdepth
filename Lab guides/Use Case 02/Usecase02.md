@@ -191,21 +191,11 @@ reports.
 
 5.  You’ll be directed to Power BI Home page.
 
-6.  In the **Microsoft Fabric Home** page, navigate and click on **Power
-    BI** tile.
+6.  In the Workspaces pane, click on **+** **New workspace** tile
 
-    ![](./media/image13.png)
+    ![](./media/a2.png)
 
-7.  In the **Power BI Home** page left-sided navigation menu, navigate
-    and click on **Workspaces** as shown in the below image.
-
-      ![](./media/image14.png)
-
-8.  In the Workspaces pane, click on **+** **New workspace button**
-
-    ![](./media/image15.png)
-
-9.  In the **Create a workspace** pane that appears on the right side,
+7.  In the **Create a workspace** pane that appears on the right side,
     enter the following details, and click on the **Apply** button.
     |  |  |
     |---|---|
@@ -292,12 +282,7 @@ To auto-deploy the resources, use these steps below.
 
 ## **Task 4: Get data with Eventstream**
 
-1.  Go back to the Microsoft Fabric, navigate and click on **Power BI**
-    at the bottom of the page, then select **Real-Time Intelligence**.
-    
-    ![](./media/image29.png)
-
-2.  On the **Synapse Real-Time Analytics** home page,
+1.  On the **Synapse Real-Time Analytics** home page,select **+New item** and 
     select **Eventstream**. Name the Eventstream
     **+++StockEventStream+++**, and click on the **Create** button.
     
@@ -305,12 +290,12 @@ To auto-deploy the resources, use these steps below.
     
     ![](./media/image31.png)
 
-3.  On the Eventstream, select **New source** and select **Azure Event
+2.  On the Eventstream, select **New source** and select **Azure Event
     Hubs.**
     
     ![](./media/image32.png)
 
-4.  On the **Azure Event Hubs** configuration page, enter the below
+3.  On the **Azure Event Hubs** configuration page, enter the below
     details and click on **Add** button.
 
     i.	**Source name**: +++StockEventHub+++

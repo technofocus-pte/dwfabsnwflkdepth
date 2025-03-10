@@ -1,4 +1,4 @@
-# **Use case 01-Building a Sales and Geography Data Warehouse for Contoso in Microsoft Fabric-new**
+# **Use case 01-Building a Sales and Geography Data Warehouse for Contoso in Microsoft Fabric**
 **Introduction**
 
 Contoso, a multinational retail company, is looking to modernize its
@@ -84,7 +84,7 @@ items.
 2.  In the **Microsoft Fabric** window, enter assigned credentials, and
     click on the **Submit** button.
 
-    ![](./media/image2.png)
+     ![](./media/image2.png)
 
 3.  Then, In the **Microsoft** window enter the password and click on
     the **Sign in** button**.
@@ -95,15 +95,15 @@ items.
 
     ![](./media/image4.png)
 
-5.  You’ll be directed to Power BI Home page.
+5.  You’ll be directed to Fabric Home page.
 
-    ![](./media/image5.png)
+    ![](./media/a1.png)
 
 ## **Task 2: Start the Microsoft Fabric trial**
 
 Follow these steps to start your Fabric trial.
 
-1.  On **Power BI Home** page, click on the **Account manager** on the
+1.  On **Fabric Home** page, click on the **Account manager** on the
     right side. In the Account manager blade, navigate and
     select **Start trial as shown in the below image.**
 
@@ -130,21 +130,11 @@ Follow these steps to start your Fabric trial.
 Before working with data in Fabric, create a workspace with the Fabric
 trial enabled.
 
-1.  On the **Microsoft Fabric** home page, select the **Power BI**
-    template.
-
-    ![](./media/image10.png)
-
-2.  In the **Power BI Home** page menu bar on the left,
-    select **Workspaces** (the icon looks similar to 🗇).
-
-    ![](./media/image11.png)
-
-3.  In the Workspaces pane Select **+** **New workspace**.
-       [](./media/image12.png)
+1.  In the Workspaces pane Select **+** **New workspace**.
+       [](./media/a2.png)
      
 
-4.  In the **Create a workspace tab**, enter the following details and
+2.  In the **Create a workspace tab**, enter the following details and
     click on the **Apply** button.
 
     |     |    |
@@ -165,25 +155,20 @@ trial enabled.
 
       ![](./media/image16.png)
 
-6.  In the **Power BI Fabric Lakehouse Tutorial-XX** page, click on the
-    **Data Warehouse** icon located at the bottom left and select **Data
-    Warehouse** under Datascience.
-
-     ![](./media/image17.png)
-
 ## Task 4: Create a Warehouse in Microsoft Fabric
 
-1.  In the **Synapse** **Data Warehouse** page, select **Warehouse** to
+1.  In the **Data Warehouse** page, Select **+New item** and select **Warehouse** to
     create a lakehouse.
 
-     ![](./media/image18.png)
+     ![](./media/a3.png)
+     ![](./media/a4.png)
 
-2.  On the **New warehouse** dialog,enter +++WideWorldImporters+++ and click on the **Create**
+3.  On the **New warehouse** dialog,enter **+++WideWorldImporters+++** and click on the **Create**
     button.
 
      ![](./media/image19.png)
 
-3.  When provisioning is complete, the **WideWorldImporters**
+4.  When provisioning is complete, the **WideWorldImporters**
     warehouse landing page appears.
 
     ![](./media/image20.png)
@@ -242,12 +227,12 @@ trial enabled.
 11. On the **Connection settings** pane that appears on the right side,
     configure the following settings and click on the **Create** button.
 
-      a)	In the Account name or URL, enter +++https://fabrictutorialdata.blob.core.windows.net/sampledata/+++
+      a)	In the Account name or URL, enter **+++https://fabrictutorialdata.blob.core.windows.net/sampledata/+++**
 
     
       b)	In the Connection credentials section, click on the dropdown under Connection, then select Create new connection.
     
-      c)	In Connection name field, enter +++Wide World Importers Public Sample+++.
+      c)	In Connection name field, enter **+++Wide World Importers Public Sample+++**.
     
       d)  Set the Authentication kind to **Anonymous**.
          ![](./media/image31.png)
@@ -309,11 +294,70 @@ trial enabled.
 
      ![](./media/image41.png)
 
-2.  In the **Syanapse Data Engineering** **Warehouse\_FabricXX** page,
+2.  In the **Warehouse\_FabricXX** page,
     carefully navigate and click on **WideWorldImporters** having
-    **Warehouse** type as shown in the below
-    image.
-
+    **Warehouse** type as shown in the below image.
+    ```
+    /*
+    1. Drop the dimension_city table if it already exists.
+    2. Create the dimension_city table.
+    3. Drop the fact_sale table if it already exists.
+    4. Create the fact_sale table.
+    */
+    
+    --dimension_city
+    DROP TABLE IF EXISTS [dbo].[dimension_city];
+    CREATE TABLE [dbo].[dimension_city]
+        (
+            [CityKey] [int] NULL,
+            [WWICityID] [int] NULL,
+            [City] [varchar](8000) NULL,
+            [StateProvince] [varchar](8000) NULL,
+            [Country] [varchar](8000) NULL,
+            [Continent] [varchar](8000) NULL,
+            [SalesTerritory] [varchar](8000) NULL,
+            [Region] [varchar](8000) NULL,
+            [Subregion] [varchar](8000) NULL,
+            [Location] [varchar](8000) NULL,
+            [LatestRecordedPopulation] [bigint] NULL,
+            [ValidFrom] [datetime2](6) NULL,
+            [ValidTo] [datetime2](6) NULL,
+            [LineageKey] [int] NULL
+        );
+    
+    --fact_sale
+    
+    DROP TABLE IF EXISTS [dbo].[fact_sale];
+    
+    CREATE TABLE [dbo].[fact_sale]
+    
+        (
+            [SaleKey] [bigint] NULL,
+            [CityKey] [int] NULL,
+            [CustomerKey] [int] NULL,
+            [BillToCustomerKey] [int] NULL,
+            [StockItemKey] [int] NULL,
+            [InvoiceDateKey] [datetime2](6) NULL,
+            [DeliveryDateKey] [datetime2](6) NULL,
+            [SalespersonKey] [int] NULL,
+            [WWIInvoiceID] [int] NULL,
+            [Description] [varchar](8000) NULL,
+            [Package] [varchar](8000) NULL,
+            [Quantity] [int] NULL,
+            [UnitPrice] [decimal](18, 2) NULL,
+            [TaxRate] [decimal](18, 3) NULL,
+            [TotalExcludingTax] [decimal](29, 2) NULL,
+            [TaxAmount] [decimal](38, 6) NULL,
+            [Profit] [decimal](18, 2) NULL,
+            [TotalIncludingTax] [decimal](38, 6) NULL,
+            [TotalDryItems] [int] NULL,
+            [TotalChillerItems] [int] NULL,
+            [LineageKey] [int] NULL,
+            [Month] [int] NULL,
+            [Year] [int] NULL,
+            [Quarter] [int] NULL
+        );
+    ```
       ![](./media/image42.png)
 
 3.  On the **WideWorldImporters** page, go to the **Home** tab, select **SQL** from the drop
@@ -322,67 +366,7 @@ trial enabled.
 
 4.  In the query editor, paste the following code and select **Run** to
     execute the query
-      ```
-      /*
-      1. Drop the dimension_city table if it already exists.
-      2. Create the dimension_city table.
-      3. Drop the fact_sale table if it already exists.
-      4. Create the fact_sale table.
-      */
-      
-      --dimension_city
-      DROP TABLE IF EXISTS [dbo].[dimension_city];
-      CREATE TABLE [dbo].[dimension_city]
-          (
-              [CityKey] [int] NULL,
-              [WWICityID] [int] NULL,
-              [City] [varchar](8000) NULL,
-              [StateProvince] [varchar](8000) NULL,
-              [Country] [varchar](8000) NULL,
-              [Continent] [varchar](8000) NULL,
-              [SalesTerritory] [varchar](8000) NULL,
-              [Region] [varchar](8000) NULL,
-              [Subregion] [varchar](8000) NULL,
-              [Location] [varchar](8000) NULL,
-              [LatestRecordedPopulation] [bigint] NULL,
-              [ValidFrom] [datetime2](6) NULL,
-              [ValidTo] [datetime2](6) NULL,
-              [LineageKey] [int] NULL
-          );
-      
-      --fact_sale
-      
-      DROP TABLE IF EXISTS [dbo].[fact_sale];
-      
-      CREATE TABLE [dbo].[fact_sale]
-      
-          (
-              [SaleKey] [bigint] NULL,
-              [CityKey] [int] NULL,
-              [CustomerKey] [int] NULL,
-              [BillToCustomerKey] [int] NULL,
-              [StockItemKey] [int] NULL,
-              [InvoiceDateKey] [datetime2](6) NULL,
-              [DeliveryDateKey] [datetime2](6) NULL,
-              [SalespersonKey] [int] NULL,
-              [WWIInvoiceID] [int] NULL,
-              [Description] [varchar](8000) NULL,
-              [Package] [varchar](8000) NULL,
-              [Quantity] [int] NULL,
-              [UnitPrice] [decimal](18, 2) NULL,
-              [TaxRate] [decimal](18, 3) NULL,
-              [TotalExcludingTax] [decimal](29, 2) NULL,
-              [TaxAmount] [decimal](38, 6) NULL,
-              [Profit] [decimal](18, 2) NULL,
-              [TotalIncludingTax] [decimal](38, 6) NULL,
-              [TotalDryItems] [int] NULL,
-              [TotalChillerItems] [int] NULL,
-              [LineageKey] [int] NULL,
-              [Month] [int] NULL,
-              [Year] [int] NULL,
-              [Quarter] [int] NULL
-          );
-      ```
+    
       ![](./media/image44.png)
   
       ![](./media/image45.png)

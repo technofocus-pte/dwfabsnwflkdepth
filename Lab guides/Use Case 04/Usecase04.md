@@ -52,19 +52,9 @@ trial enabled.
 
      ![](./media/image4.png)
 
-5.  On the **Microsoft Fabric** home page, select the **Power BI**
-    template.
+5.  In the Workspaces pane Select **+** **New workspace**.
 
-    ![](./media/image5.png)
-
-6.  In the **Power BI Home** page menu bar on the left,
-    select **Workspaces** (the icon looks similar to 🗇).
-
-    ![](./media/image6.png)
-
-7.  In the Workspaces pane Select **+** **New workspace**.
-
-     ![](./media/image7.png)
+     ![](./media/aa2.png)
 
 8.  In the **Create a workspace tab**, enter the following details and
     click on the **Apply** button.
@@ -85,30 +75,17 @@ trial enabled.
 9.  Wait for the deployment to complete. It takes 2-3 minutes to
     complete. When your new workspace opens, it should be empty.
 
-     ![](./media/image11.png)
-
-10.  In the **Power BI dp_FabricXX**page, click on the **Data
-    Warehouse** icon located at the bottom left and select **Data
-    Warehouse** under Datascience..
-    ![](./media/image12.png)
-
-## Task 2:Create a sample data warehouse
+ ## Task 2:Create a sample data warehouse
 
 Now that you have a workspace, it’s time to create a data warehouse.
 
-1.  At the bottom left, ensure that the **Data Warehouse** experience is
-    selected.
+1.  On the **Home** page, select **+ New item** and select **Sample warehouse** tile.
+     ![](./media/aa3.png)
+2. Create a new data warehouse named +++sample-dw+++.
 
-2.  On the **Home** page, select **Sample warehouse** and create a new
-    data warehouse named +++sample-dw+++.
-
-     ![](./media/image13.png)
- 
-     ![](./media/image14.png)
+     ![](./media/aa4.png)
   
-     ![](./media/image15.png)
-
-3.  After a minute or so, a new warehouse will be created and populated
+5.  After a minute or so, a new warehouse will be created and populated
     with sample data for a taxi ride analysis scenario.
 
     ![](./media/image16.png)
